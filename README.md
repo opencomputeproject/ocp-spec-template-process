@@ -1,2 +1,2 @@
 # ocp-spec-template-process
-OCP Specification Template Process
+This repository is used to develop and invite feedback on the OCP specification process and templates.
