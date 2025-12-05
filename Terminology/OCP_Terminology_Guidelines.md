@@ -42,34 +42,34 @@ Specifically examples include:
 
 |**Deprecated Terminology** | **Preferred Terminology** | **Typical Usage** |
 | :---         | :---       | :---      |
-Whitelist White List Whitelisted Whitelisting | allow list, include, accept, allow, Unblocked list, Permit list, Accept list, Inclusions | A list of devices, people or things considered to be acceptable or trustworthy. Example: "the software creates an Allow List of known good senders."
-Blacklist Black List Blacklisted Blacklisting | blocklist, denylist, deny list, block, exclude, reject, Banned list, Rejected list,  Exclusions | A list of devices, people, or things considered to be unacceptable or not trustworthy.
-Blackhat Black hat | Unethical, unethical hacker | A hacker who infiltrates a computer system for malicious purposes.
-Whitehat White hat | ethical, ethical hacker | An ethical computer hacker or a computer security expert who ensures the security of information systems.
-Segregate Segregation | separate, separation | Division of software or circuits into distinct elements or functions.
-Blackout | restrict, restriction, outage | Failure of electrical system. Suppression of information.
-Master | controller, main, primary, active, writer, source, control, local, control, parent, manager, superior, original | An IC or firmware/software device which has control over one or many other devices
-Slave | responder, secondary, replica, stand-by, reader, target, remote, agent, child, subordinate | An IC or firmware/software device which is controlled by another device
-Master/Slave or Master-Slave (Includes any reference to both words in an implied relationship) | primary-secondary, primary-replica, primary-subordinate, source-target, parent-child | IC or firmware/software devices which has control over one or many and which is controlled by another.
+| Whitelist, White List, Whitelisted, Whitelisting | allow list, include, accept, allow, Unblocked list, Permit list, Accept list, Inclusions | A list of devices, people or things considered to be acceptable or trustworthy. Example: "the software creates an Allow List of known good senders." |
+| Blacklist, Black List, Blacklisted, Blacklisting | blocklist, denylist, deny list, block, exclude, reject, Banned list, Rejected list,  Exclusions | A list of devices, people, or things considered to be unacceptable or not trustworthy. |
+| Blackhat, Black hat | Unethical, unethical hacker | A hacker who infiltrates a computer system for malicious purposes. |
+| Whitehat, White hat | ethical, ethical hacker | An ethical computer hacker or a computer security expert who ensures the security of information systems. |
+| Segregate, Segregation | separate, separation | Division of software or circuits into distinct elements or functions. |
+| Blackout | restrict, restriction, outage | Failure of electrical system. Suppression of information. |
+| Master | controller, main, primary, active, writer, source, control, local, control, parent, manager, superior, original | An IC or firmware/software device which has control over one or many other devices |
+| Slave | responder, secondary, replica, stand-by, reader, target, remote, agent, child, subordinate | An IC or firmware/software device which is controlled by another device |
+| Master/Slave or Master-Slave (Includes any reference to both words in an implied relationship) | primary-secondary, primary-replica, primary-subordinate, source-target, parent-child | IC or firmware/software devices which has control over one or many and which is controlled by another. |
 
 
 ### Gendered Language
 
 **Deprecated Terminology** | **Preferred Terminology** | **Usage**
 | :---         | :---       | :---      |
-Man-hour, man-day, and other derivatives, including plural forms | person-hour, person-day, fte-hour, fte-day, work-hour, work-day, human effort – and plural forms | Amount of work that can be done by one person within a period of time.
-Manpower | workers, workforce, staff, labor, staffing | Numbers of persons available for work.
-Rule of Thumb | guideline | A broadly accurate guide or principle, based on experience or practice rather than theory.
+| Man-hour, man-day, and other derivatives, including plural forms | person-hour, person-day, fte-hour, fte-day, work-hour, work-day, human effort – and plural forms | Amount of work that can be done by one person within a period of time. |
+| Manpower | workers, workforce, staff, labor, staffing | Numbers of persons available for work. |
+| Rule of Thumb | guideline | A broadly accurate guide or principle, based on experience or practice rather than theory. |
 
 ## Signal Names & Pin Names
 
 Deprecated Terminology | Preferred Terminology | Usage
 | :---         | :---       | :---      |
-SS – Slave Select | CS – Chip Select | Activated by the controller to initiate communication with a given peripheral.
-MOMI – Master Out Master In SOSI – Slave Out Slave In | COPI (controller out / peripheral in) | For devices that can be either a controller or a peripheral; the signal on which the device sends output when acting as the controller, and receives input when acting as the peripheral.
-MOMI – Master Out Master In SOSI – Slave Out Slave In | CIPO (controller in / peripheral out) | For devices that can be either a controller or a peripheral; the signal on which the device receives input when acting as the controller, and sends output when acting as the peripheral.
-MOSI – Master Out Slave In | SDI (Serial Data In) | An input signal on a device where data is received from another SPI device.
-MISO – Master In Slave Out | SDO (Serial Data Out) | An output signal on a device where data is sent out to another SPI device.
+| SS – Slave Select | CS – Chip Select | Activated by the controller to initiate communication with a given peripheral. |
+| MOMI – Master Out Master In SOSI – Slave Out Slave In | COPI (controller out / peripheral in) | For devices that can be either a controller or a peripheral; the signal on which the device sends output when acting as the controller, and receives input when acting as the peripheral. |
+| MOMI – Master Out Master In SOSI – Slave Out Slave In | CIPO (controller in / peripheral out) | For devices that can be either a controller or a peripheral; the signal on which the device receives input when acting as the controller, and sends output when acting as the peripheral. |
+| MOSI – Master Out Slave In | SDI (Serial Data In) | An input signal on a device where data is received from another SPI device. |
+| MISO – Master In Slave Out | SDO (Serial Data Out) | An output signal on a device where data is sent out to another SPI device. |
 
 ## License
 
