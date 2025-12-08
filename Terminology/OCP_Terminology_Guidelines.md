@@ -1,3 +1,5 @@
+![OCP Logo](../images/OCP-logo.png)
+
 # OCP Terminology Guidelines for Inclusion and Openness
 
 Revision C WIP
@@ -5,8 +7,6 @@ Revision C WIP
 date
 
 ## Table of Contents
-- [OCP Terminology Guidelines for Inclusion and Openness](#ocp-terminology-guidelines-for-inclusion-and-openness)
-  - [Table of Content](#table-of-content)
   - [Revision Table](#revision-table)
   - [Introduction](#introduction)
   - [Scope](#scope)
@@ -20,13 +20,13 @@ date
 | :---         | :---       | :---      |
 | A | William Carter (OCP) | Initial Release |
 | B | William Carter (OCP), Dell Technologies Inclusive Language Team | Added alternative language substitutions and section covering gendered language |
-| C **WIP** | Russ Wunderlich | created md from rev B PDF.  Added terms to allow list and blocklist |
+| C **WIP** | Russ Wunderlich | created md from rev B PDF. moved preferred term to 1st item. Updated terms in Racial language section |
 
-## Introduction
+# Introduction
 
 The ideals behind open sourcing stipulate that everyone benefits when we share and work together. Any open source project is designed to promote collaborative sharing of design elements with peers and to help each other learn from, adopt, or enhance shared contributions in a professional and inclusive manner. The Open Compute Project Foundation (OCP) operates within these ideals, and therefore requires that terminology that could be considered offensive be eliminated from any material.
 
-## Scope
+# Scope
 
 Deprecated Terminology should be removed from all material contributed or shared with the Open Compute Project Community. This includes all material or presentations shared during project calls, workshops and Summit events. The preferred terminology shall be applied to all documentation, specifications, white papers and presentations. 
 
@@ -36,24 +36,24 @@ Specifically examples include:
 * Software / Firmware: Add new function names using the preferred terminology. Maintaining reverse compatibility with deprecated names is allowed.
 * Datasheets / Documentation: Use preferred terminology for general documentation and any pin and signal names listed within the documentation.
 
-## General Documentation
+# General Documentation
 
-### Racial Language
+## Racial Language
 
 |**Deprecated Terminology** | **Preferred Terminology** | **Typical Usage** |
 | :---         | :---       | :---      |
-| Whitelist, White List, Whitelisted, Whitelisting | allow list, include, accept, allow, Unblocked list, Permit list, Accept list, Inclusions | A list of devices, people or things considered to be acceptable or trustworthy. Example: "the software creates an Allow List of known good senders." |
+| Whitelist, White List, Whitelisted, Whitelisting | allowlist, include, accept, allow, Unblocked list, Permit list, Accept list, Inclusions | A list of devices, people or things considered to be acceptable or trustworthy. Example: "the software creates an Allow List of known good senders." |
 | Blacklist, Black List, Blacklisted, Blacklisting | blocklist, denylist, deny list, block, exclude, reject, Banned list, Rejected list,  Exclusions | A list of devices, people, or things considered to be unacceptable or not trustworthy. |
-| Blackhat, Black hat | Unethical, unethical hacker | A hacker who infiltrates a computer system for malicious purposes. |
-| Whitehat, White hat | ethical, ethical hacker | An ethical computer hacker or a computer security expert who ensures the security of information systems. |
+| Blackhat, Black hat | Malicious actor, Threat actor, ~~Unethical~~, unethical hacker | A hacker who infiltrates a computer system for malicious purposes. |
+| Whitehat, White hat | ~~ethical,~~ ethical hacker, security researcher | An ethical computer hacker or a computer security expert who ensures the security of information systems. |
 | Segregate, Segregation | separate, separation | Division of software or circuits into distinct elements or functions. |
-| Blackout | restrict, restriction, outage | Failure of electrical system. Suppression of information. |
-| Master | controller, main, primary, active, writer, source, control, local, control, parent, manager, superior, original | An IC or firmware/software device which has control over one or many other devices |
-| Slave | responder, secondary, replica, stand-by, reader, target, remote, agent, child, subordinate | An IC or firmware/software device which is controlled by another device |
+| Blackout | outage, restrict, restriction  | Failure of electrical system. Suppression of information. |
+| Master | primary, source, controller, main, active, writer, control, local, parent, manager, superior, original | An IC or firmware/software device which has control over one or many other devices |
+| Slave | secondary, target, responder, replica, stand-by, reader, remote, agent, child, subordinate | An IC or firmware/software device which is controlled by another device |
 | Master/Slave or Master-Slave (Includes any reference to both words in an implied relationship) | primary-secondary, primary-replica, primary-subordinate, source-target, parent-child | IC or firmware/software devices which has control over one or many and which is controlled by another. |
 
 
-### Gendered Language
+## Gendered Language
 
 **Deprecated Terminology** | **Preferred Terminology** | **Usage**
 | :---         | :---       | :---      |
@@ -61,7 +61,7 @@ Specifically examples include:
 | Manpower | workers, workforce, staff, labor, staffing | Numbers of persons available for work. |
 | Rule of Thumb | guideline | A broadly accurate guide or principle, based on experience or practice rather than theory. |
 
-## Signal Names & Pin Names
+# Signal Names & Pin Names
 
 Deprecated Terminology | Preferred Terminology | Usage
 | :---         | :---       | :---      |
@@ -71,7 +71,7 @@ Deprecated Terminology | Preferred Terminology | Usage
 | MOSI – Master Out Slave In | SDI (Serial Data In) | An input signal on a device where data is received from another SPI device. |
 | MISO – Master In Slave Out | SDO (Serial Data Out) | An output signal on a device where data is sent out to another SPI device. |
 
-## License
+# License
 
 OCP encourages participants to share their proposals, specifications and designs with the community. This is to promote openness and encourage continuous and open feedback. It is important to remember that by providing feedback for any such documents, whether in written or verbal form, that the contributor or the contributor's organization grants OCP and its members irrevocable right to use this feedback for any purpose without any further obligation.
 
