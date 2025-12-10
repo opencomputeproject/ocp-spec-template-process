@@ -1,4 +1,4 @@
-> [comment]: #: The intent for this file is to be a clean template w/o any embedded instructions.
+<!-- The intent for this file is to be a clean template w/o any embedded instructions. -->
 
 ![OCP Logo](../images/OCP-logo.png)
 
@@ -80,7 +80,7 @@ NOTWITHSTANDING THE FOREGOING LICENSES, THIS SPECIFICATION IS PROVIDED BY OCP "A
 
 ## Acknowledgements
 
-The Contributors of this Specification would like to acknowledge the following:
+The Contributors of this Specification would like to acknowledge the following:  
 ***instruction:** add in contributors*
 
 ---
@@ -121,7 +121,7 @@ Including the word “not” (as in should not) indicates a strong recommendatio
 - May = allowable
 Indicates flexibility of choice (option) with no implied preference.
 
-> [comment]: #: option to reference one of the standard bodies definition. there are generally more detailed which may not be necessary
+<!-- option to reference one of the standard bodies definition. there are generally more detailed which may not be necessary -->
 
 ---
 
