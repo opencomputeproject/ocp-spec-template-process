@@ -1,6 +1,6 @@
-> [comment]: #: The intent for this file is to have the necessary instructions for the base spec template. We may find this unnecessary and simply integrate into the template.
+<!-- The intent for this file is to have the necessary instructions for the base spec template. We may find this unnecessary and simply integrate into the template. -->
 
-**Instructions Table of Contents** 
+**Table of Contents for Instructions** 
 - [Title Page](#title-page)
 - [Revision History](#revision-history)
 - [License](#license)	
@@ -34,39 +34,39 @@
 ---
 
 # Title Page
-**This section is mandatory.**
+**This section is mandatory.**  
 The title page shall have the specification name, the revision, the publication date, as well as the enumeration of authors.
  
 # Table of Contents
-**This section is mandatory.**
+**This section is mandatory.**  
 The table of contents shall enumerate the primary and secondary sections of the specification.
 
 # Table of Figures
-**This section is mandatory.**
+**This section is mandatory.**  
 The table of figures shall enumerate the figures within the main body of the specification.
 
 # Table of Tables
-**This section is mandatory.**
+**This section is mandatory.**  
 The table of tables shall enumerate the tables within the main body of the specification.
 
 # Revision History
-**This section is mandatory.**
-Record revision, publish date, authors and the high level changes made for the revision.
+**This section is mandatory.**  
+Record revision, publish date, authors and the high level changes made for the revision.  
 You may have an appendix with a more detailed change enumeration if you desire.
 
 # License
-**This section is mandatory.**
+**This section is mandatory.**  
 The template language is fixed, the only action necessary is to enumerate the contributor Name(s) or Company name(s)
 
 ## Acknowledgements
-**This section is mandatory.**
+**This section is mandatory.**  
 List all companies or individuals who may have assisted you with the specification by providing feedback and suggestions but did not provide any IP.
 
 # Compliance with OCP Tenets
-**This section and all tenets are mandatory.**
+**This section and all tenets are mandatory.**  
 For each of the tenets, detail how your contribution aligns and supports the tenet.
 
-> [comment]: #: should probably just delete the text re tenets and point to source file https://146a55aca6f00848c565-a7635525d40ac1c70300198708936b4e.ssl.cf1.rackcdn.com/images/bf648bb75091907147e76846cad590f402660d2e.pdf
+<!-- should probably just delete the text re tenets and point to source file https://146a55aca6f00848c565-a7635525d40ac1c70300198708936b4e.ssl.cf1.rackcdn.com/images/bf648bb75091907147e76846cad590f402660d2e.pdf -->
 
 ## Openness
 Openness is measured by the ability of third parties to build, modify, or personalize your contributed device, platform, or software. The OCP aims for completely open platforms that include all programmable devices, firmware, software, mechanical and electrical design elements, and any necessary external components or tools like software utilities. Contributors are highly encouraged to collaborate with other OCP Projects that may have complementary knowledge and expertise. Actively remove barriers to openness and demonstrate collaboration by sharing, seeking feedback, and accepting changes to designs and specifications. Ensure your contribution can be extended and enhanced by others.
@@ -85,7 +85,7 @@ Your contribution must be sustainable, maximizing transparency of environmental 
 
 
 # Introduction
-**This section and all sub-sections are mandatory.**
+**This section and all sub-sections are mandatory.**  
 no text necessary in this section, simply the header
 
 ## Purpose of the Document
@@ -101,11 +101,11 @@ Identify the intended readers and their roles. This could include architects, en
 this section lists the standard conventions used in this specification. no modifications are necessary
 
 # Overview
-**This section is mandatory.**
+**This section is mandatory.**  
 This section provides a high-level summary of the system or solution. It sets the context for the entire specification and explains what the solution is intended to achieve.
 
 ## Description
-**This section is mandatory.**
+**This section is mandatory.**  
 Provide a concise explanation of what the system or solution is, including its primary function and role within the larger ecosystem. Include the problems it addresses. Explain its utility within the Open Compute Project ecosystem.
 
 ## Goals, Vision, Objectives
@@ -113,17 +113,17 @@ Provide a concise explanation of what the system or solution is, including its p
 Define the long-term vision and goals for the system or solution. Outline measurable objectives that guide decisions. This helps consumers of the specification understand the problem being addressed and how the solution fits into the broader context.
 
 ## User Requirements/User Stories
-**This section is optional.**
-Capture what end-users or stakeholders need from the system. This can be expressed as high-level requirements or user stories to ensure the architecture aligns with real-world needs. 
+**This section is optional.**  
+Capture what end-users or stakeholders need from the system. This can be expressed as high-level requirements or user stories to ensure the architecture aligns with real-world needs.  
 If end-user stories or requirements we not utilized in the definition, then this section need not be present and the Goals, Visions, Objectives section will suffice.
 
 ## Solution Architecture
-**This section is optional.**
-Present the high-level design of the solution, including major components, their interactions, and how they fulfill the goals and requirements. This section often includes diagrams (e.g., system context, component diagrams).
+**This section is optional.**  
+Present the high-level design of the solution, including major components, their interactions, and how they fulfill the goals and requirements. This section often includes diagrams (e.g., system context, component diagrams).  
 For fundamental architectural level specifications, this section should be present and would evolve with revision progression.
 
 # Main Section A
-The sections labeled “Main Sections” constitute the main body of the document and are intentionally generic, allowing the author(s) to adapt them to the specific needs of the project. These sections should define requirements across multiple domains and may be organized in a structure that best supports the specification’s objectives.
+The sections labeled “Main Sections” constitute the main body of the document and are intentionally generic, allowing the author(s) to adapt them to the specific needs of the project. These sections should define requirements across multiple domains and may be organized in a structure that best supports the specification’s objectives.  
 Examples of sections within the main body:
 - HW specification: may address domains such as performance, mechanical, electrical, thermal, manageability, security, reliability, and regulatory compliance.
 - SW specification: May cover domains such as data architecture, interfaces & protocols, performance & scalability, security, maintainability, test & validation.
@@ -135,18 +135,18 @@ Examples of sections within the main body:
 # Appendix
 no text necessary in this section, simply the header
 ## Glossary and Abbreviations
-**This section is mandatory.**
+**This section is mandatory.**  
 Enumerate all unique definitions and abbreviations utilized in the specification.
 
 ## References
-**This section is mandatory.**
-Enumerate & cross-link references throughout the specification
+**This section is mandatory.**  
+Enumerate & cross-link references throughout the specification  
 ToDo: examples
 
 ## Requirement Summary
-**This section is mandatory if requirement language is utilized.**
+**This section is mandatory if requirement language is utilized.**  
 ToDo: need to define the specific style
 
 ## Appendix D
-**This section is optional.**
+**This section is optional.**  
 Use additional sub-sections for other detail which need to be captured
