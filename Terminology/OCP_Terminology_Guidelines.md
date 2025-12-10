@@ -6,21 +6,27 @@ Revision C WIP
 
 date
 
+---
+
 ## Table of Contents
-  - [Revision Table](#revision-table)
+  - [Revision History](#revision-history)
   - [Introduction](#introduction)
   - [Scope](#scope)
   - [General Documentation](#general-documentation)
   - [Signal Names & Pin Names](#signal-names-pin-names)
   - [License](#license)
 
-## Revision Table
+---
 
-| **Revision** | **Author** | **Notes** |
-| :---         | :---       | :---      |
-| A | William Carter (OCP) | Initial Release |
-| B | William Carter (OCP), Dell Technologies Inclusive Language Team | Added alternative language substitutions and section covering gendered language |
-| C **WIP** | Russ Wunderlich | created md from rev B PDF. moved preferred term to 1st item. Updated terms in Racial language section |
+## Revision History
+
+| Revision | Date       | Author(s)    | Description |
+| :---     | :---       | :---         | :---        |
+| A        | UNK        |William Carter (OCP) | Initial Release |
+| B        | 2020/12/20 | William Carter (OCP), Dell Technologies Inclusive Language Team | Added alternative language substitutions and section covering gendered language |
+| **WIP**  | TBD        | Russ Wunderlich | created md from rev B PDF. moved preferred term to 1st item. Updated terms in Racial language section |
+
+---
 
 # Introduction
 
