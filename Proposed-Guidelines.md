@@ -22,12 +22,12 @@ Date:
   - [Scope](#scope)
   - [Specification Usage and Types](#specification-usage-and-types)
   - [Guidelines](#guidelines)
-    - [Vendor Information](##vendor-information)
+    - [Language Convention](#language-convention)
+    - [Vendor Information](#vendor-information)
     - [Citations](#citations)
     - [Revisions](#revisions)
     - [Normative Language](#normative-language)
-  - [Specification Formatting and content](#specification-formatting-and-content)
-  - [Project Review Guidelines and Checklist](project-review-guidelines-and-checklist)
+  - [Project Review Guidelines and Checklist](#project-review-guidelines-and-checklist)
 
 # Goal
 The goal of this document is to provide the framework for OCP Specification contributions. 
@@ -110,6 +110,9 @@ This document defines the technical details for one of the following types of sp
 - A detailed specification for a product type
 
 # Guidelines
+## Language Convention
+All specifications shall be written in English, and any recognized variant of English spelling (e.g., British, American, Canadian, Australian) is acceptable, provided usage is consistent within each document.
+
 ## Vendor Information
 
 1. **Neutral Treatment of Vendors**  
