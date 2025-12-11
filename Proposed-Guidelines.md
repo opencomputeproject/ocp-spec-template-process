@@ -162,7 +162,7 @@ Instead we propose a simplified progression:
 2.x = use whole number revisions for major changes. There is no implication of forward or backward compatibility.  
 
 - Additional revisions between the designated milestones are allowed but generally discouraged. 
-- Versioning is not required. If desired, versioning can be included in the specification name (i.e., Recliner V1 r1.0, Recliner V2 r0.5). 
+- Typical use is to have the whole number be the version with the revision the decimal places (i.e. version.revision). Some OCP specification use  versioning in the name of the specification which adds to the version confusion. We'll simply state revision... If desired, versioning can be included in the specification name (i.e., Recliner V1 r1.0, Recliner V2 r0.5). 
 
 ## Normative Language
 Normative language establishes clear, enforceable requirements and removes ambiguity. Requirements are the basis for compliance.
