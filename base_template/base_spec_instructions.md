@@ -60,7 +60,8 @@ The template language is fixed, the only action necessary is to enumerate the co
 
 ## Acknowledgements
 **This section is mandatory.**  
-List all companies or individuals who may have assisted you with the specification by providing feedback and suggestions but did not provide any IP.
+List all companies or individuals who may have assisted you with the specification by providing feedback and suggestions but did not provide any IP.  
+use "None" or "N/A" if not applicable.
 
 # Compliance with OCP Tenets
 **This section and all tenets are mandatory.**  
