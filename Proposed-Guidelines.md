@@ -71,7 +71,7 @@ These three usage categories apply across all levels, from architecture to imple
 ## Types
 The three types or layers of OCP specifications are Base, Design, and Product.
 
-![Layers](./images/layers.png)
+<img src="./images/layers.png" alt="Responsive Image" style="max-width: 100%; height: auto;">
 
 Any or all of the layers could be utilized for any particular contribution.  
 Examples:
@@ -183,6 +183,11 @@ Indicates flexibility of choice (option) with no implied preference.
 
 **All specifications shall utilize normative language.** 
 
+## Information outside of specification scope
+Maintaining consistency within specifications is critical to ensuring quality. Authors sometimes wish to include additional information that falls outside the approved specification template or does not align with its intended purpose.
+
+**No content beyond the defined template structure shall be added.**
+The template provides flexibility for including supplementary details in the appendix section.
 
 
 # Project Review Guidelines and Checklist
