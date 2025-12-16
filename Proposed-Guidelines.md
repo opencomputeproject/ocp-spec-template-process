@@ -11,7 +11,7 @@ Date:
 # Revision Table
 | **Date** | **Revision** | **Author** | **Notes** |
 | :---     | :---         | :---       | :---      |
-| WIP      | WIP          | Russ Wunderlich (OCP) | WIP - |
+| WIP      | WIP          | Russ Wunderlich (OCP) | see appendix for detailed WIP changes |
 |          |              |            |           | 
 
 ---
@@ -28,6 +28,7 @@ Date:
     - [Revisions](#revisions)
     - [Normative Language](#normative-language)
   - [Project Review Guidelines and Checklist](#project-review-guidelines-and-checklist)
+  - [Appendix - Detailed Change list](#appendix---detailed-change-list)
 
 # Goal
 The goal of this document is to provide the framework for OCP Specification contributions. 
@@ -118,7 +119,7 @@ All specifications shall be written in English, and any recognized variant of En
 1. **Neutral Treatment of Vendors**  
 Vendors must not be promoted or demoted in any documentation, communication, or system configuration.
 2. **Component References**  
-Specific vendor components should not be explicitly named. When necessary, use generic phrasing such as “a component like XYZ” or entertain enabling a component specification that does not favor a particular vendor.
+Specific vendor components should not be explicitly named. When necessary, use generic phrasing such as “a component like XYZ”, "component XYZ or equivalent", or entertain enabling a component specification that does not favor a particular vendor.
 
 ## Citations
 All citations must reference published documents. Authors shall not cite documents that have not yet been published. For multiple related OCP specifications, cross-referencing is acceptable provided that all referenced specifications have initiated the submission process to the contribution hub.
@@ -204,3 +205,19 @@ Final form verified to requirements before uploading to contribution hub
 
 ToDo: develop checklist
 
+# Appendix - detailed Change list
+This section will be more a detailed direction enumeration than an explicit change list in order to help overall changes & direction for feedback.  
+
+**2025/12/10**
+- Errata updates are suspended while we investigate usage (details available on the wiki).
+- publish a proposed base template which is a blank template with instructions as a separate document. The purpose is to ensure the template clearly displays the mandatory sections as well as shows the lack of mandate (flexibility) within the body.
+- Specification Guidelines serve as the framework for expectation alignment (i.e., mandates)
+  - Normative language is required.
+  - Revisioning is simplified.
+  - The compliance section has been removed. This does not mean specifications will lack compliance requirements; rather, the format is under discussion. If requirement language is mandated, compliance becomes a summary of those requirements. (Status: WIP)
+  - The requirement for product specifications to include design file contributions has been omitted. The community has not consistently followed this guidance, and its role needs to be reconsidered within the broader scope of contributions.
+  - Additional guidance has been added for aspects such as vendor language and references.
+- major items currently under investigation
+  - Compliance as noted above
+  - Language for Base/Design/Product layers. Current wording in the guidelines originates from the 2022 definition effort. Since then, OCP’s scope has expanded significantly. The language and definitions are under review to ensure they align with and define the full scope of OCP, including considerations like design file inclusion.
+  - Specification format. We aim to fully support a Markdown-based* workflow within OCP and encourage its use. However, it is unclear whether this will work for all specification contributions. We are investigating supported formats (Markdown, LaTeX, DOCX, PDF, etc.). *Note: Some contributors prefer Markdown with rendering flows, while others favor LaTeX. We are evaluating all options.
