@@ -99,7 +99,9 @@ Define the boundaries of the document. Specify what is included and what is expl
 Identify the intended readers and their roles. This could include architects, engineers, developers, project managers, etc.
 
 ## Conventions
-this section lists the standard conventions used in this specification. no modifications are necessary
+This section lists the standard conventions used in this specification.  
+Normative language is mandatory, no modifications are necessary to this text.
+Add in other conventions utilized in the specification (numerical representation etc.)
 
 # Overview
 **This section is mandatory.**  

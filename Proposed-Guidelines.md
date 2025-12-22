@@ -110,6 +110,8 @@ This document defines the technical details for one of the following types of sp
 - Modification of an existing product specification
 - A detailed specification for a product type
 
+<!-- think about putting a spec decision tree for choosing the specification type -->
+
 # Guidelines
 ## Language Convention
 All specifications shall be written in English, and any recognized variant of English spelling (e.g., British, American, Canadian, Australian) is acceptable, provided usage is consistent within each document.
