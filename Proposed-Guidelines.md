@@ -184,6 +184,8 @@ Including the word “not” (as in should not) indicates a strong recommendatio
 - May = allowable  
 Indicates flexibility of choice (option) with no implied preference.
 
+Normative language shall be invariant to capitalization.
+
 **All specifications shall utilize normative language.** 
 
 ## Information outside of specification scope
