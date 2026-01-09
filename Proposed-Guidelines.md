@@ -8,7 +8,7 @@ Date:
 
 ---
 
-# Revision Table
+# Version Table
 | **Date** | **Revision** | **Author** | **Notes** |
 | :---     | :---         | :---       | :---      |
 | WIP      | WIP          | Russ Wunderlich (OCP) | see appendix for detailed WIP changes |
@@ -17,7 +17,7 @@ Date:
 ---
 
 # Table of Contents
-  - [Revision Table](#revision-table)
+  - [Version Table](#Version-table)
   - [Goal](#goal)
   - [Scope](#scope)
   - [Specification Usage and Types](#specification-usage-and-types)
@@ -25,7 +25,7 @@ Date:
     - [Language Convention](#language-convention)
     - [Vendor Information](#vendor-information)
     - [Citations](#citations)
-    - [Revisions](#revisions)
+    - [Versioning](#versioning)
     - [Normative Language](#normative-language)
   - [Project Review Guidelines and Checklist](#project-review-guidelines-and-checklist)
   - [Appendix - Detailed Change list](#appendix---detailed-change-list)
@@ -157,18 +157,30 @@ question: Is there a better process to address OCP specification questions than 
 
 
 
-## Revisions
-While many organizations adopt a highly structured approach to version and revisioning, this rigor does not appear necessary for OCP.  
-Instead we propose a simplified progression:  
-0.3 = initial version containing sufficient content (e.g., TOC, vision, scope ...) to enable alignment  
-0.5 = majority of content defined,  with some areas requiring additional detail  
-0.8 = definition complete and implementable, though not fully reviewed  
-1.0 = reviewed and implementable across all capabilities  
-1.x = use dot revisions for minor changes. Prefer increments of tenths (e.g., r1.1); use hundredths (e.g., r1.05) if many revisions are anticipated  
-2.x = use whole number revisions for major changes. There is no implication of forward or backward compatibility.  
+## Versioning
+Versioning shall follow the format: **Major.minor.patch/errata (M.m.p)**
 
-- Additional revisions between the designated milestones are allowed but generally discouraged. 
-- Typical use is to have the whole number be the version with the revision the decimal places (i.e. version.revision). Some OCP specification use  versioning in the name of the specification which adds to the version confusion. We'll simply state revision... If desired, versioning can be included in the specification name (i.e., Recliner V1 r1.0, Recliner V2 r0.5). 
+Increment Rules:
+- Major: large functionality changes that may be incompatible with prior major version  
+- minor: Adding functionality in a backward compatible manner  
+- patch/errata: backward compatible corrections  
+
+Currently, SW shall use the patch version. All other usages shall have errata = 0 until an errata process is established.
+
+Guidelines for usage:   
+V0.3.0 = initial version with  sufficient content (e.g., TOC, vision, scope ...) to enable alignment  
+V0.5.0 = majority of content defined; some areas need additional detail  
+V0.8.0 = definition complete and implementable, though not fully reviewed  
+V1.0.0 = reviewed and implementable across all capabilities  
+V1.x.0 = use minor revisions for backward compatible changes. 
+V2.x.0 = use Major revisions for changes that may affect backward compatibility.  
+
+Additional Notes
+- Initial development is indicated Major = 0 (0.m.p) and any content may change at any time
+- Additional revisions between the designated milestones are allowed but generally discouraged
+- Versioning only increments; it never decrements
+- Versioning uses only non-negative integers
+- Any version statement in the specification name is part of the name, not the version (e.g. Recliner V1 V1.0.0, Recliner V2 V1.1.0)
 
 ## Normative Language
 Normative language establishes clear, enforceable requirements and removes ambiguity. Requirements are the basis for compliance.
