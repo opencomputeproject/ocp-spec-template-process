@@ -63,6 +63,11 @@ The template language is fixed, the only action necessary is to enumerate the co
 List all companies or individuals who may have assisted you with the specification by providing feedback and suggestions but did not provide any IP.  
 use "None" or "N/A" if not applicable.
 
+# Trademarks
+**This section is mandatory.**  
+List all trademarks referenced in the specification.  
+use "None" or "N/A" if not applicable.
+
 # Compliance with OCP Tenets
 **This section and all tenets are mandatory.**  
 For each of the tenets, detail how your contribution aligns and supports the tenet.

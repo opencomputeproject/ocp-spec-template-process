@@ -80,8 +80,13 @@ NOTWITHSTANDING THE FOREGOING LICENSES, THIS SPECIFICATION IS PROVIDED BY OCP "A
 
 ## Acknowledgements
 
-The Contributors of this Specification would like to acknowledge the following:  
-***instruction:** add in contributors*
+The authors of this Specification would like to acknowledge the following contributors:  
+***instruction:** add in contributors. this could be a detailed list or a more high level statement if the list is extensive.*
+
+---
+# Trademarks 
+Names and brands may be claimed as trademarks by their respective companies.  
+***instruction:** Use this section to acknowledge all trademarks applicable.* 
 
 ---
 
