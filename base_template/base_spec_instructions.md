@@ -6,6 +6,7 @@
 - [License](#license)	
    - [Open Web Foundation (OWF) CLA](#open-web-foundation-owf-cla)
    - [Acknowledgements](#acknowledgements)
+- [Trademarks](#trademarks) 
 - [Compliance with OCP Tenets](#compliance-with-ocp-tenets)
    - [Openness](#openness)
    - [Efficiency](#efficiency)
