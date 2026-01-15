@@ -180,6 +180,7 @@ Additional Notes
 - Additional revisions between the designated milestones are allowed but generally discouraged
 - Versioning only increments; it never decrements
 - Versioning uses only non-negative integers
+- Regarding "complete and implementable", it is acceptable for a version to include elements intended for future definition, provided these elements do not hinder the implementation of the features and functionality defined within the current version
 - Any version statement in the specification name is part of the name, not the version (e.g. Recliner V1 V1.0.0, Recliner V2 V1.1.0)
 
 ## Normative Language

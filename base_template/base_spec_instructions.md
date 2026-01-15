@@ -6,7 +6,7 @@
 - [License](#license)	
    - [Open Web Foundation (OWF) CLA](#open-web-foundation-owf-cla)
    - [Acknowledgements](#acknowledgements)
-- [Trademarks](#trademarks) 
+- [Copyright / Trademark](#copyright--trademark) 
 - [Compliance with OCP Tenets](#compliance-with-ocp-tenets)
    - [Openness](#openness)
    - [Efficiency](#efficiency)
@@ -64,10 +64,11 @@ The template language is fixed, the only action necessary is to enumerate the co
 List all companies or individuals who may have assisted you with the specification by providing feedback and suggestions but did not provide any IP.  
 use "None" or "N/A" if not applicable.
 
-# Trademarks
+# Copyright / Trademark  
 **This section is mandatory.**  
-List all trademarks referenced in the specification.  
-use "None" or "N/A" if not applicable.
+Explicitly list all trademarks referenced in the specification. If none are applicable, use "None" or "N/A".  
+
+While the preferred approach is to reference third-party material (see specification guidelines), if any allowable copyrighted material is utilized, include the required copyright notice in this section. If none are applicable, use "None" or "N/A.".  
 
 # Compliance with OCP Tenets
 **This section and all tenets are mandatory.**  

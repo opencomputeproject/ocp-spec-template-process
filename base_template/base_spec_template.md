@@ -26,7 +26,7 @@ Authors:
 - [License](#license)	
    - [Open Web Foundation (OWF) CLA](#open-web-foundation-owf-cla)
    - [Acknowledgements](#acknowledgements)
-- [Trademarks](#trademarks) 
+- [Copyright / Trademark  ](#copyright--trademark) 
 - [Compliance with OCP Tenets](#compliance-with-ocp-tenets)
    - [Openness](#openness)
    - [Efficiency](#efficiency)
@@ -81,13 +81,16 @@ NOTWITHSTANDING THE FOREGOING LICENSES, THIS SPECIFICATION IS PROVIDED BY OCP "A
 
 ## Acknowledgements
 
-The authors of this Specification would like to acknowledge the following contributors:  
+The authors of this specification would like to acknowledge the following contributors:  
 ***instruction:** add in contributors. this could be a detailed list or a more high level statement if the list is extensive.*
 
 ---
-# Trademarks 
-Names and brands may be claimed as trademarks by their respective companies.  
-***instruction:** Use this section to acknowledge all trademarks applicable.* 
+# Copyright / Trademark  
+Names and brands mentioned may be claimed as trademarks by their respective owners.  
+***instruction:** Use this section to acknowledge all trademarks applicable. list all applicable trademarks and copyrights explicitly* 
+
+Materials utilized in this specification carry the following copyright:
+***instruction:** Use this section to document the copyrights of of any third-party material utilized.* 
 
 ---
 
