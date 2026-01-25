@@ -124,7 +124,9 @@ Vendors must not be promoted or demoted in any documentation, communication, or 
 To the extent possible, avoid recommending components that can only be sourced from a single vendor. When a sole-sourced item is unavoidable, use neutral language such as “component XYZ or equivalent,” or consider defining a component specification that enables multiple vendors
 
 ## Citations
-All citations must reference published documents. Authors shall not cite documents that have not yet been published. For multiple related OCP specifications, cross-referencing is acceptable provided that all referenced specifications have initiated the submission process to the contribution hub.
+All citations must reference published documents. Authors shall not cite documents that have not yet been published.  
+
+For multiple related OCP specifications being developed simultaneously, cross-referencing is permitted provided that all referenced specifications have initiated the submission process to the contribution hub and the specifications will be submitted for approval no greater than three months apart.
 
 ## Use of Non-OCP Document Information
 **General Principle**  
