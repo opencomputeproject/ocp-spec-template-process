@@ -121,7 +121,7 @@ All specifications shall be written in English, and any recognized variant of En
 1. **Neutral Treatment of Vendors**  
 Vendors must not be promoted or demoted in any documentation, communication, or system configuration.
 2. **Component References**  
-Specific vendor components should not be explicitly named. When necessary, use generic phrasing such as “a component like XYZ”, "component XYZ or equivalent", or entertain enabling a component specification that does not favor a particular vendor.
+To the extent possible, avoid recommending components that can only be sourced from a single vendor. When a sole-sourced item is unavoidable, use neutral language such as “component XYZ or equivalent,” or consider defining a component specification that enables multiple vendors
 
 ## Citations
 All citations must reference published documents. Authors shall not cite documents that have not yet been published. For multiple related OCP specifications, cross-referencing is acceptable provided that all referenced specifications have initiated the submission process to the contribution hub.
@@ -144,6 +144,8 @@ Clearly state the source of the material.
 Ensure all legal and usage requirements are met (e.g., copyright notices, required attribution). 
 
 **Permitted Sources**  
+Permitted sources would be those which allow legally free and unrestricted use.  
+ 
 Examples of allowed sources include:
 - Apache 
 - OIF 
@@ -152,6 +154,9 @@ Examples of allowed sources include:
 
 ## Modification of non-OCP industry standards
 ToDo: complete this section
+
+
+<!-- Modification of industry standard disallowed, must request change to the industry standard. Compliance.  Augmentation allowed. configuration/profiles, or otherwise selecting feature is acceptable as long as it remains compliant to the standard. -->
 
 question: Is there a better process to address OCP specification questions than an email to the project group.io?
 
