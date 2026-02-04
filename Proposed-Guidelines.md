@@ -22,11 +22,13 @@ Date:
   - [Scope](#scope)
   - [Specification Usage and Types](#specification-usage-and-types)
   - [Guidelines](#guidelines)
+    - [GitHub](#github)
     - [Language Convention](#language-convention)
-    - [Vendor Information](#vendor-information)
-    - [Citations](#citations)
-    - [Versioning](#versioning)
+    - [Modification of Non-OCP standards](#modification-of-non-ocp-industry-standards)
     - [Normative Language](#normative-language)
+    - [References](#references)
+    - [Versioning](#versioning)
+    - [Vendor Information](#vendor-information)
   - [Project Review Guidelines and Checklist](#project-review-guidelines-and-checklist)
   - [Appendix - Detailed Change list](#appendix---detailed-change-list)
 
@@ -112,21 +114,82 @@ This document defines the technical details for one of the following types of sp
 
 <!-- think about putting a spec decision tree for choosing the specification type -->
 
-# Guidelines
+# Guidelines  
+## GitHub  
+The following guidelines, together with applicable OCP IT policies, define the expectations for software contributions that incorporate GitHub‑sourced repositories.
+### Licensing Requirements  
+- All repositories incorporated into an OCP contribution **SHALL** use a license included in the OCP‑approved software licenses list (insert link to official list).
+  - Note that OCP specification follow the appropriate contribution license which may not align with the software license list.
+- Contributors **SHALL NOT** rely on repositories with ambiguous, proprietary, or incompatible licenses.  
+
+### Preferred Repository Hosting
+- It is **strongly preferred** that contributors use repositories under the official [OCP GitHub hierarchy](https://github.com/opencomputeproject). 
+- Use of non‑OCP GitHub repositories is acceptable when:
+  - The repository uses an OCP‑approved license, and
+  - The contributor evaluates long‑term maintenance, availability, and lifecycle risks. 
+- For long‑term viability, contributors **should** consider pulling non‑OCP sources into an appropriate OCP repository—especially when:
+  - it supports stability,
+  - Customization or patches are anticipated, or
+  - Dependency longevity is critical.
+### Specifications
+Specifications have a defined process and associated templates. Any specifications hosted from repositories **shall**:
+- align to/follow the appropriate specification template. This **shall** be measured via the PDF rendering submitted for the contribution 
+<!-- update when we align to a specific rendering flow or allow md preview -->
+- Maintain version control per the specification process. The version **shall** use a tag for the specific version. 
+### Repository Documentation Requirements
+Every repository referenced within a contribution **SHALL** include a README.md containing at minimum:
+- Repository Description  
+A clear statement of purpose and how the repository is used within the contribution.
+- Internal and external dependencies
+- Repository Hierarchy / Structure
+Explanation of directory layout, modules, or tooling (if applicable).
+- Dependencies on OCP‑Approved Contributions
+Include links to relevant OCP specifications or contribution database entries.
+- Contact Information (leads or support channels) as appropriate
+### No Guidelines
+No guidelines are provided for the following:
+- workflow or branching model other than statements already made
+- repository structure
+- rate of development or maintenance 
+
+
+
+
 ## Language Convention
 All specifications shall be written in English, and any recognized variant of English spelling (e.g., British, American, Canadian, Australian) is acceptable, provided usage is consistent within each document.
 
-## Vendor Information
+## Modification of non-OCP industry standards
+ToDo: complete this section
 
-1. **Neutral Treatment of Vendors**  
-Vendors must not be promoted or demoted in any documentation, communication, or system configuration.
-2. **Component References**  
-To the extent possible, avoid recommending components that can only be sourced from a single vendor. When a sole-sourced item is unavoidable, use neutral language such as “component XYZ or equivalent,” or consider defining a component specification that enables multiple vendors
 
-## Citations
-All citations must reference published documents. Authors shall not cite documents that have not yet been published.  
+<!-- Modification of industry standard disallowed, must request change to the industry standard. Compliance.  Augmentation allowed. configuration/profiles, or otherwise selecting feature is acceptable as long as it remains compliant to the standard. -->
 
-For multiple related OCP specifications being developed simultaneously, cross-referencing is permitted provided that all referenced specifications have initiated the submission process to the contribution hub and the specifications will be submitted for approval no greater than three months apart.
+question: Is there a better process to address OCP specification questions than an email to the project group.io?
+
+
+## Normative Language
+Normative language establishes clear, enforceable requirements and removes ambiguity. Requirements are the basis for compliance.
+
+- Shall = requirement  
+Requirements are mandatory, must be done.  
+Including the word “not” (as in shall not) specifies a mandatory prohibition, meaning the requirement explicitly forbids the action.
+
+- Should = recommendation  
+Recommendations are optional yet indicate a preferred direction if implemented  
+Including the word “not” (as in should not) indicates a strong recommendation against performing an action  
+
+- May = allowable  
+Indicates flexibility of choice (option) with no implied preference.
+
+Normative language shall be invariant to capitalization.
+
+**All specifications shall utilize normative language.** 
+
+
+## References
+**All references must be to published documents. Authors shall not reference documents that have not yet been published.**  
+
+For multiple related OCP specifications being developed simultaneously, cross-referencing is permitted provided that all referenced specifications have initiated the submission process to the Contribution Hub and will be submitted <u>for approval</u> no greater than three months apart.
 
 ## Use of Non-OCP Document Information
 **General Principle**  
@@ -154,14 +217,12 @@ Examples of allowed sources include:
 - MIL-SPEC 
 
 
-## Modification of non-OCP industry standards
-ToDo: complete this section
+## Vendor Information
 
-
-<!-- Modification of industry standard disallowed, must request change to the industry standard. Compliance.  Augmentation allowed. configuration/profiles, or otherwise selecting feature is acceptable as long as it remains compliant to the standard. -->
-
-question: Is there a better process to address OCP specification questions than an email to the project group.io?
-
+1. **Neutral Treatment of Vendors**  
+Vendors must not be promoted or demoted in any documentation, communication, or system configuration.
+2. **Component References**  
+To the extent possible, avoid recommending components that can only be sourced from a single vendor. When a sole-sourced item is unavoidable, use neutral language such as “component XYZ or equivalent,” or consider defining a component specification that enables multiple vendors
 
 
 ## Versioning
@@ -189,24 +250,6 @@ Additional Notes
 - Versioning uses only non-negative integers
 - Regarding "complete and implementable", it is acceptable for a version to include elements intended for future definition, provided these elements do not hinder the implementation of the features and functionality defined within the current version
 - Any version statement in the specification name is part of the name, not the version (e.g. Recliner V1 V1.0.0, Recliner V2 V1.1.0)
-
-## Normative Language
-Normative language establishes clear, enforceable requirements and removes ambiguity. Requirements are the basis for compliance.
-
-- Shall = requirement  
-Requirements are mandatory, must be done.  
-Including the word “not” (as in shall not) specifies a mandatory prohibition, meaning the requirement explicitly forbids the action.
-
-- Should = recommendation  
-Recommendations are optional yet indicate a preferred direction if implemented  
-Including the word “not” (as in should not) indicates a strong recommendation against performing an action  
-
-- May = allowable  
-Indicates flexibility of choice (option) with no implied preference.
-
-Normative language shall be invariant to capitalization.
-
-**All specifications shall utilize normative language.** 
 
 ## Information outside of specification scope
 Maintaining consistency within specifications is critical to ensuring quality. Authors sometimes wish to include additional information that falls outside the approved specification template or does not align with its intended purpose.
