@@ -189,7 +189,9 @@ Normative language shall be invariant to capitalization.
 ## References
 **All references must be to published documents. Authors shall not reference documents that have not yet been published.**  
 
-For multiple related OCP specifications being developed simultaneously, cross-referencing is permitted provided that all referenced specifications have initiated the submission process to the Contribution Hub and will be submitted <u>for approval</u> no greater than three months apart.
+For multiple related OCP specifications being developed simultaneously, cross-referencing is permitted provided that all referenced specifications have initiated the submission process to the Contribution Hub and will be submitted <u>for approval</u> no greater than three months apart.  
+ 
+It is strongly preferred not to reference a document stored on an OCP Google Drive because such documents may be transient. Instead, the preferred approach is to release the document as an associated contribution and then use the Google Drive–hosted version only for “work in progress” material.  
 
 ## Use of Non-OCP Document Information
 **General Principle**  
