@@ -89,7 +89,7 @@ These three usage categories apply across all levels, from architecture to imple
 ## Types
 The three types or layers of OCP specifications are Base, Design, and Product.
 
-<img src="./images/layers.png" alt="Responsive Image" style="max-width: 80%; height: 80%;">
+<img src="./images/layers.png" alt="Responsive Image" style="max-width: 50%; height: 50%;">
 
 Any or all of the layers could be utilized for any particular contribution.  
 Examples:
