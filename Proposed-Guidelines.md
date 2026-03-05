@@ -81,7 +81,8 @@ For any framework to succeed, it must be grounded in a clear understanding of us
 - Planned progression through multiple revisions (0.3, 0.5, 0.8, 1.0) to achieve final, implementable results
 - Represents the slowest progression and highest detail level
 
-These three usage categories apply across all levels, from architecture to implementation, and any contribution may align with each category throughout its revisions. When evaluating the framework, key considerations include:
+These three usage categories apply across all levels, from architecture to implementation, and any contribution may align with each category throughout its revisions. When evaluating the framework, key considerations include:  
+
 - Detail level: Comprehensive specification details vs. “Good enough” specification
 - Industry alignment: many specification are tightly aligned to industry standards and may need additional considerations
 - Flexibility for innovation: Allowance for exploration w/o having a predefined roadmap
@@ -92,14 +93,16 @@ The three types or layers of OCP specifications are Base, Design, and Product.
 <img src="./images/layers.png" alt="Responsive Image" style="max-width: 50%; height: 50%;">
 
 Any or all of the layers could be utilized for any particular contribution.  
-Examples:
+Examples:  
+
 - A base layer defines the architecture and requirements for a nuclear power source for an AI Datacenter. The subsequent design specification details how to meet the base requirements with specific design elements and more detailed requirements for a Molten Salt Reactor (MSR). The final specification, the product spec, provides the implementation details (and potentially manufacturing files) for the "MSRv5 Power Module", a fifth generation MSR from the Nuclear Are Us store. 
 - The Nuclear Are Us store provides (only) a design specification in order to create a larger supplier base for the MSR.
 
 ### Base
 The Base Specification is an architectural framework for coarse alignment providing requirements for flexible hardware and software modules/layers to interoperate. Market requirements drive Base Specifications. Without defining details of a specific design, the Base Specification may be light on IP content. This structure enables and simplifies the process for multiple parties (including potential competitors) to engage in this phase.
 
-This layer defines the technical details for one of the following:
+This layer defines the technical details for one of the following:  
+
 - Conceptual framework for an extensible technology platform/layer, representing technical community wide consensus and possibly used as a de-facto standard
 - Requirements for a specific solution
 - Extension/modification of an existing specification 
@@ -111,7 +114,8 @@ The Design Specifications has detail that further defines what specific role thi
 
 Design Specifications are intended to foster multiple product specifications.
 
-This document defines the technical details for one of the following types of specifications:
+This document defines the technical details for one of the following types of specifications:  
+
 - Design Specification for an intended physical hardware product type
 - Modification of an existing specification (state which existing spec is being modified)
 - A specification with additional detail over the Base Specification for a product type.
@@ -122,7 +126,8 @@ The product layer is an implementation-level specification providing the exactin
 
 The Product Specification captures manufacturing requirements including all design and build files, building on the Design Specification. 
 
-This document defines the technical details for one of the following types of specifications:
+This document defines the technical details for one of the following types of specifications:  
+
 - Product Specification for an intended physical hardware product type
 - Modification of an existing product specification
 - A detailed specification for a product type
@@ -147,10 +152,11 @@ The following guidelines, together with applicable OCP IT policies, define the e
   - Customization or patches are anticipated, or
   - Dependency longevity is critical.
 ### Specifications
-Specifications have a defined process and associated templates. Any specifications hosted from repositories **shall**:
+Specifications have a defined process and associated templates. Any specifications hosted from repositories **shall**:  
 - align to/follow the appropriate specification template. This **shall** be measured via the PDF rendering submitted for the contribution 
 <!-- update when we align to a specific rendering flow or allow md preview -->
 - Maintain version control per the specification process. The version **shall** use a tag for the specific version. 
+- 
 ### Repository Documentation Requirements
 Every repository referenced within a contribution **SHALL** include a README.md containing at minimum:
 - Repository Description  
@@ -166,7 +172,6 @@ No guidelines are provided for the following:
 - workflow or branching model other than statements already made
 - repository structure
 - rate of development or maintenance 
-
 
 
 
@@ -266,7 +271,7 @@ Additional Notes
 - Versioning only increments; it never decrements
 - Versioning uses only non-negative integers
 - Regarding "complete and implementable", it is acceptable for a version to include elements intended for future definition, provided these elements do not hinder the implementation of the features and functionality defined within the current version
-- Any version statement in the specification name is part of the name, not the version (e.g. Recliner V1 V1.0.0, Recliner V2 V1.1.0)
+- Any numbering statement in the specification name is part of the name, not the version (e.g. Recliner V1 V1.0.0, Recliner V2 V1.2.0)
 
 ## Information outside of specification scope
 Maintaining consistency within specifications is critical to ensuring quality. Authors sometimes wish to include additional information that falls outside the approved specification template or does not align with its intended purpose.
