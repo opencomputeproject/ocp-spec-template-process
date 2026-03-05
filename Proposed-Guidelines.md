@@ -17,20 +17,35 @@ Date:
 ---
 
 # Table of Contents
-  - [Version Table](#Version-table)
-  - [Goal](#goal)
-  - [Scope](#scope)
-  - [Specification Usage and Types](#specification-usage-and-types)
-  - [Guidelines](#guidelines)
-    - [GitHub](#github)
-    - [Language Convention](#language-convention)
-    - [Modification of Non-OCP standards](#modification-of-non-ocp-industry-standards)
-    - [Normative Language](#normative-language)
-    - [References](#references)
-    - [Versioning](#versioning)
-    - [Vendor Information](#vendor-information)
-  - [Project Review Guidelines and Checklist](#project-review-guidelines-and-checklist)
-  - [Appendix - Detailed Change list](#appendix---detailed-change-list)
+- [Proposed Guidelines for OCP Specifications](#proposed-guidelines-for-ocp-specifications)
+- [Version Table](#version-table)
+- [Table of Contents](#table-of-contents)
+- [Goal](#goal)
+- [Scope](#scope)
+- [Specification Usage and Types](#specification-usage-and-types)
+  - [Usages](#usages)
+  - [Types](#types)
+    - [Base](#base)
+    - [Design](#design)
+    - [Product](#product)
+- [Guidelines](#guidelines)
+  - [GitHub](#github)
+    - [Licensing Requirements](#licensing-requirements)
+    - [Preferred Repository Hosting](#preferred-repository-hosting)
+    - [Specifications](#specifications)
+    - [Repository Documentation Requirements](#repository-documentation-requirements)
+    - [No Guidelines](#no-guidelines)
+  - [Language Convention](#language-convention)
+  - [Modification of non-OCP industry standards](#modification-of-non-ocp-industry-standards)
+  - [Normative Language](#normative-language)
+  - [References](#references)
+  - [Use of Non-OCP Document Information](#use-of-non-ocp-document-information)
+  - [Vendor Information](#vendor-information)
+  - [Versioning](#versioning)
+  - [Information outside of specification scope](#information-outside-of-specification-scope)
+- [Project Review Guidelines and Checklist](#project-review-guidelines-and-checklist)
+  - [Guidelines](#guidelines-1)
+- [Appendix - detailed Change list](#appendix---detailed-change-list)
 
 # Goal
 The goal of this document is to provide the framework for OCP Specification contributions. 
@@ -74,7 +89,7 @@ These three usage categories apply across all levels, from architecture to imple
 ## Types
 The three types or layers of OCP specifications are Base, Design, and Product.
 
-<img src="./images/layers.png" alt="Responsive Image" style="max-width: 100%; height: auto;">
+<img src="./images/layers.png" alt="Responsive Image" style="max-width: 80%; height: 80%;">
 
 Any or all of the layers could be utilized for any particular contribution.  
 Examples:
