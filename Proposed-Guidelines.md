@@ -45,6 +45,7 @@ Date:
   - [Information outside of specification scope](#information-outside-of-specification-scope)
 - [Project Review Guidelines and Checklist](#project-review-guidelines-and-checklist)
   - [Guidelines](#guidelines-1)
+    - [OCP Foundation Staff Review](#ocp-foundation-staff-review)
 - [Appendix - detailed Change list](#appendix---detailed-change-list)
 
 # Goal
@@ -286,13 +287,26 @@ Define a minimal process & checklist that each workstream executes prior to cont
 Checklist submitted with contribution  
 
 Expectations
-- Fully inclusive with defined minimum set of reviewers
+- Fully inclusive with defined minimum set of reviewers (content experts)
 - Invitations to dependent/adjacent workstreams
 - All feedback tracked & dispositioned
 
 Final form verified to requirements before uploading to contribution hub
 
 ToDo: develop checklist
+
+### OCP Foundation Staff Review
+
+OCP staff review specifications not only for alignment with the approved templates and guidelines but also for technical accuracy. Staff feedback is organized into the following categories:
+- Required
+Indicates feedback that must be addressed before the specification can advance to the next approval phase. This typically reflects non‑conformance to templates or guidelines, or a significant issue within the specification itself.
+- Recommended
+Indicates feedback that should be addressed to improve the overall quality, clarity, and usability of the specification.
+- Suggested
+Optional feedback intended to enhance clarity or usability, but not essential for approval.
+- Comment
+Captures all other observations, including occasional questions, often related to consistency or clarification needs. While questions are generally avoided at the staff‑review level, they may arise. Authors may determine if and how to address comments in this category.
+
 
 # Appendix - detailed Change list
 This section will be more a detailed direction enumeration than an explicit change list in order to help overall changes & direction for feedback.  
@@ -310,3 +324,15 @@ This section will be more a detailed direction enumeration than an explicit chan
   - Compliance as noted above
   - Language for Base/Design/Product layers. Current wording in the guidelines originates from the 2022 definition effort. Since then, OCP’s scope has expanded significantly. The language and definitions are under review to ensure they align with and define the full scope of OCP, including considerations like design file inclusion.
   - Specification format. We aim to fully support a Markdown-based* workflow within OCP and encourage its use. However, it is unclear whether this will work for all specification contributions. We are investigating supported formats (Markdown, LaTeX, DOCX, PDF, etc.). *Note: Some contributors prefer Markdown with rendering flows, while others favor LaTeX. We are evaluating all options.
+
+**2026/03/10**
+Compilation of the more significant additions/changes since last entry
+- added Foundation staff review information
+- Various clarification made in guideline
+- Various formatting changes
+- added GitHub Guidelines. misc formatting changes (ex. alpha order), reverted Citations to References
+- updated reference section with three month rule
+- updated component reference wording
+- added a trademark Copyright/Trademark section
+- reverted Versioning to existing Major.minor.patch format with updated guidelines
+- added a detailed change list to guidelines
