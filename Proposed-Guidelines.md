@@ -298,13 +298,13 @@ ToDo: develop checklist
 ### OCP Foundation Staff Review
 
 OCP staff review specifications not only for alignment with the approved templates and guidelines but also for technical accuracy. Staff feedback is organized into the following categories:
-- Required
+- Required  
 Indicates feedback that must be addressed before the specification can advance to the next approval phase. This typically reflects non‑conformance to templates or guidelines, or a significant issue within the specification itself.
-- Recommended
+- Recommended  
 Indicates feedback that should be addressed to improve the overall quality, clarity, and usability of the specification.
-- Suggested
+- Suggested  
 Optional feedback intended to enhance clarity or usability, but not essential for approval.
-- Comment
+- Comment  
 Captures all other observations, including occasional questions, often related to consistency or clarification needs. While questions are generally avoided at the staff‑review level, they may arise. Authors may determine if and how to address comments in this category.
 
 
@@ -333,6 +333,6 @@ Compilation of the more significant additions/changes since last entry
 - added GitHub Guidelines. misc formatting changes (ex. alpha order), reverted Citations to References
 - updated reference section with three month rule
 - updated component reference wording
-- added a trademark Copyright/Trademark section
+- added a Copyright/Trademark section
 - reverted Versioning to existing Major.minor.patch format with updated guidelines
 - added a detailed change list to guidelines
