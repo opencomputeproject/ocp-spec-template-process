@@ -2,41 +2,44 @@
 
 **Table of Contents for Instructions** 
 - [Title Page](#title-page)
+- [Table of Contents](#table-of-contents)
+- [Table of Figures](#table-of-figures)
+- [Table of Tables](#table-of-tables)
 - [Revision History](#revision-history)
-- [License](#license)	
-   - [Open Web Foundation (OWF) CLA](#open-web-foundation-owf-cla)
-   - [Acknowledgements](#acknowledgements)
-- [Copyright / Trademark](#copyright--trademark) 
+- [License](#license)
+  - [Acknowledgements](#acknowledgements)
+- [Copyright / Trademark](#copyright--trademark)
 - [Compliance with OCP Tenets](#compliance-with-ocp-tenets)
-   - [Openness](#openness)
-   - [Efficiency](#efficiency)
-   - [Impact](#impact)
-   - [Scale](#scale)
-   - [Sustainability](#sustainability)
+  - [Openness](#openness)
+  - [Efficiency](#efficiency)
+  - [Impact](#impact)
+  - [Scale](#scale)
+  - [Sustainability](#sustainability)
 - [Introduction](#introduction)
-   - [Purpose of the Document](#purpose-of-the-document)
-   - [Scope](#scope)
-   - [Audience](#audience)
-   - [Conventions](#Conventions)
+  - [Purpose of the Document](#purpose-of-the-document)
+  - [Scope](#scope)
+  - [Audience](#audience)
+  - [Conventions](#conventions)
 - [Overview](#overview)
-   - [Description](#description)
-   - [Goals, Vision, Objectives](#goals-vision-objectives)
-   - [User Requirements/User Stories](#user-requirementsuser-stories)
-   - [Solution Architecture](#solution-architecture)
+  - [Description](#description)
+  - [Goals, Vision, Objectives](#goals-vision-objectives)
+  - [User Requirements/User Stories](#user-requirementsuser-stories)
+  - [Solution Architecture](#solution-architecture)
 - [Main Section A](#main-section-a)
 - [Main Section B](#main-section-b)
 - [Main Section C](#main-section-c)
 - [Appendix](#appendix)
-   - [Glossary](#glossary-and-abbreviations)
-   - [References](#references)
-   - [Requirement Summary](#requirement-summary)
-   - [Appendix D](#appendix-d)
+  - [Glossary and Abbreviations](#glossary-and-abbreviations)
+  - [References](#references)
+  - [Requirement Summary](#requirement-summary)
+  - [Appendix D](#appendix-d)
 
 ---
 
 # Title Page
 **This section is mandatory.**  
-The title page shall have the specification name, the revision, the publication date, as well as the enumeration of authors.
+The title page shall have the specification name, the revision, the publication date, as well as the enumeration of authors.  
+Limit the entry for each Author to their name and, if desired, their company affiliation. Marketing elements, including logos or promotional content, are not permitted.
  
 # Table of Contents
 **This section is mandatory.**  
@@ -61,8 +64,7 @@ The template language is fixed, the only action necessary is to enumerate the co
 
 ## Acknowledgements
 **This section is mandatory.**  
-List all companies or individuals who may have assisted you with the specification by providing feedback and suggestions but did not provide any IP.  
-use "None" or "N/A" if not applicable.
+List all companies or individuals who may have assisted you with the specification by providing feedback and suggestions but did not provide any IP. Limit the entry for each contributor to their name and, if desired, their company affiliation. Marketing elements, including logos or promotional content, are not permitted.
 
 # Copyright / Trademark  
 **This section is mandatory.**  
