@@ -39,7 +39,7 @@
 # Title Page
 **This section is mandatory.**  
 The title page shall have the specification name, the revision, the publication date, as well as the enumeration of authors.  
-Limit the entry for each Author to their name and, if desired, their company affiliation  or approved designation if unaffiliated. Marketing elements, including logos or promotional content, are not permitted.
+Limit the entry for each Author to their name and, if desired, their company affiliation  or approved designation (such as "individual") if unaffiliated. Marketing elements, including logos or promotional content, are not permitted.
  
 # Table of Contents
 **This section is mandatory.**  
@@ -64,7 +64,7 @@ The template language is fixed, the only action necessary is to enumerate the co
 
 ## Acknowledgements
 **This section is mandatory.**  
-List all companies or individuals who may have assisted you with the specification by providing feedback and suggestions but did not provide any IP. Limit the entry for each contributor to their name and, if desired, their company affiliation or approved designation if unaffiliated. Marketing elements, including logos or promotional content, are not permitted.
+List all companies or individuals who may have assisted you with the specification by providing feedback and suggestions but did not provide any IP. Limit the entry for each contributor to their name and, if desired, their company affiliation or approved designation (such as "individual") if unaffiliated. Marketing elements, including logos or promotional content, are not permitted.
 
 # Copyright / Trademark  
 **This section is mandatory.**  

@@ -202,7 +202,9 @@ Including the word “not” (as in should not) indicates a strong recommendatio
 - May = allowable  
 Indicates flexibility of choice (option) with no implied preference.
 
-Normative language shall be invariant to capitalization.
+Normative language shall be invariant to capitalization. This was chosen for simplicity as most authors do not rigorously follow the "all capitalized" standard. Authors following the invariant to capitalization guideline SHALL NOT use the keywords in their normal English meanings.   
+
+The normative language above was selected for consistency and ease of implementation. This guidance is not intended to be restrictive. Conformance with the terminology defined in IETF RFCs 2119 and 8174 is acceptable. Regardless of capitalization choices, the selected convention must be documented in the "Conventions" section and applied uniformly throughout the document.
 
 **All specifications shall utilize normative language.** 
 
