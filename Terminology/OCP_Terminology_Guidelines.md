@@ -1,30 +1,31 @@
-![OCP Logo](../images/OCP-logo.png)
+---
+title: OCP Terminology Guidelines for Inclusion and Openness
+project: Foundation Staff
+version: Version C
+supersedes: Version B
+status: draft
+released: true
+class: info
+date: 2026-03-13
+paragraph_numbering: no
+line_numbering: yes
+header-includes: |
+  \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
+...
+---
 
-# OCP Terminology Guidelines for Inclusion and Openness
+\tableofcontents
 
-Revision C WIP
-
-date
 
 ---
 
-## Table of Contents
-  - [Revision History](#revision-history)
-  - [Introduction](#introduction)
-  - [Scope](#scope)
-  - [General Documentation](#general-documentation)
-  - [Signal Names & Pin Names](#signal-names-pin-names)
-  - [License](#license)
-
----
-
-## Revision History
+**Revision History**
 
 | Revision | Date       | Author(s)    | Description |
 | :---     | :---       | :---         | :---        |
-| A        | UNK        |William Carter (OCP) | Initial Release |
+| A        | unknown    | William Carter (OCP) | Initial Release |
 | B        | 2020/12/20 | William Carter (OCP), Dell Technologies Inclusive Language Team | Added alternative language substitutions and section covering gendered language |
-| **WIP**  | TBD        | Russ Wunderlich | created md from rev B PDF. moved preferred term to 1st item. Updated terms in Racial language section |
+| C        | TBD        | Russ Wunderlich (OCP) | created md from rev B PDF. moved preferred term to 1st item in the list. Updated terms in racial language section. Removed Rule-of-thumb from gendered language. added violence & war section |
 
 ---
 
@@ -34,13 +35,14 @@ The ideals behind open sourcing stipulate that everyone benefits when we share a
 
 # Scope
 
-Deprecated Terminology should be removed from all material contributed or shared with the Open Compute Project Community. This includes all material or presentations shared during project calls, workshops and Summit events. The preferred terminology shall be applied to all documentation, specifications, white papers and presentations. 
+Deprecated Terminology should be removed from all material contributed or shared with the Open Compute Project Community. This includes all material or presentations shared during project calls, workshops and Summit events. The preferred terminology shall be applied to all community material including documentation, specifications, white papers and presentations. 
 
-Specifically examples include:
-* Schematics: Change pins on devices to the appropriate preferred name. Use net and signal names that avoid the use of terminology listed in the deprecated terminology column below.
-* Hardware: Replace deprecated terminology with preferred terminology silkscreen labels.
-* Software / Firmware: Add new function names using the preferred terminology. Maintaining reverse compatibility with deprecated names is allowed.
-* Datasheets / Documentation: Use preferred terminology for general documentation and any pin and signal names listed within the documentation.
+Specifically examples include:  
+
+- Schematics: Change pins on devices to the appropriate preferred name. Use net and signal names that avoid the use of terminology listed in the deprecated terminology column below.  
+- Hardware: Replace deprecated terminology with preferred terminology silkscreen labels.  
+- Software / Firmware: Add new function names using the preferred terminology. Maintaining reverse compatibility with deprecated names is allowed.  
+- Datasheets / Documentation: Use preferred terminology for general documentation and any pin and signal names listed within the documentation.  
 
 # General Documentation
 
@@ -50,13 +52,13 @@ Specifically examples include:
 | :---         | :---       | :---      |
 | Whitelist, White List, Whitelisted, Whitelisting | allowlist, include, accept, allow, Unblocked list, Permit list, Accept list, Inclusions | A list of devices, people or things considered to be acceptable or trustworthy. Example: "the software creates an Allow List of known good senders." |
 | Blacklist, Black List, Blacklisted, Blacklisting | blocklist, denylist, deny list, block, exclude, reject, Banned list, Rejected list,  Exclusions | A list of devices, people, or things considered to be unacceptable or not trustworthy. |
-| Blackhat, Black hat | Malicious actor, Threat actor, ~~Unethical~~, unethical hacker | A hacker who infiltrates a computer system for malicious purposes. |
-| Whitehat, White hat | ~~ethical,~~ ethical hacker, security researcher | An ethical computer hacker or a computer security expert who ensures the security of information systems. |
+| Blackhat, Black hat | Malicious actor, Threat actor, unethical hacker | A hacker who infiltrates a computer system for malicious purposes. |
+| Whitehat, White hat | ethical hacker, security researcher | An ethical computer hacker or a computer security expert who ensures the security of information systems. |
 | Segregate, Segregation | separate, separation | Division of software or circuits into distinct elements or functions. |
 | Blackout | outage, restrict, restriction  | Failure of electrical system. Suppression of information. |
-| Master | primary, source, controller, main, active, writer, control, local, parent, manager, superior, original | An IC or firmware/software device which has control over one or many other devices |
-| Slave | secondary, target, responder, replica, stand-by, reader, remote, agent, child, subordinate | An IC or firmware/software device which is controlled by another device |
-| Master/Slave or Master-Slave (Includes any reference to both words in an implied relationship) | primary-secondary, primary-replica, primary-subordinate, source-target, parent-child | IC or firmware/software devices which has control over one or many and which is controlled by another. |
+| Master | primary, source, controller, main, writer, control, local, parent, manager, superior, original | An IC or firmware/software device which has control over one or many other devices |
+| Slave | secondary, target, responder, completer, reader, remote, agent, child, subordinate | An IC or firmware/software device which is controlled by another device |
+| Master/Slave or Master-Slave (Includes any reference to both words in an implied relationship) | primary-secondary, requester-completer, source-target, primary-subordinate, parent-child | IC or firmware/software devices which has control over one or many and which is controlled by another. |
 
 
 ## Gendered Language
@@ -65,7 +67,17 @@ Specifically examples include:
 | :---         | :---       | :---      |
 | Man-hour, man-day, and other derivatives, including plural forms | person-hour, person-day, fte-hour, fte-day, work-hour, work-day, human effort – and plural forms | Amount of work that can be done by one person within a period of time. |
 | Manpower | workers, workforce, staff, labor, staffing | Numbers of persons available for work. |
-| Rule of Thumb | guideline | A broadly accurate guide or principle, based on experience or practice rather than theory. |
+| male, female | plug, socket | when used to reference a particular side of a mated pair connector |
+| man-in-the-middle | Adversary-in-the-middle attack, Intermediary attack, Interceptor attack | When an attacker secretly intercepts and relays communications between two systems or people who believe that they are communicating directly with each other |
+
+## Violence or War Language
+
+**Deprecated Terminology** | **Preferred Terminology** | **Usage**
+| :---                     | :---                      | :---                         |
+| abort, aborted, kill, killed | end/ended, halt, cancel, interrupt, stop/stopped | intentionally stopping, halting, or ending a process, operation, or task before it completes |
+| blast-radius | impact scope, span of effect, extent, affected areas, affected components | the span of impact from a particular error or incident |
+| End-of-life | end of support, decommission, discontinued support |the point at which a product or service is no longer supported, maintained, or updated |
+
 
 # Signal Names & Pin Names
 
@@ -81,9 +93,9 @@ Deprecated Terminology | Preferred Terminology | Usage
 
 OCP encourages participants to share their proposals, specifications and designs with the community. This is to promote openness and encourage continuous and open feedback. It is important to remember that by providing feedback for any such documents, whether in written or verbal form, that the contributor or the contributor's organization grants OCP and its members irrevocable right to use this feedback for any purpose without any further obligation.
 
-It is acknowledged that any such documentation and any ancillary materials that are provided to OCP in connection with this document, including without limitation any white papers, articles, photographs, studies, diagrams, contact information (together, “Materials”) are made available under the Creative Commons Attribution-ShareAlike 4.0 International License found here: https://creativecommons.org/licenses/by-sa/4.0/, or any later version, and without limiting the foregoing, OCP may make the Materials available under such terms.
+It is acknowledged that any such documentation and any ancillary materials that are provided to OCP in connection with this document, including without limitation any white papers, articles, photographs, studies, diagrams, contact information (together, “Materials”) are made available under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/), or any later version, and without limiting the foregoing, OCP may make the Materials available under such terms.
 
-As a contributor to this document, all members represent that they have the authority to grant the rights and licenses herein. They further represent and warrant that the Materials do not and will not violate the copyrights or misappropriate the trade secret rights of any third party, including without limitation rights in intellectual property. The contributor(s) also represent that, to the extent the Materials include materials protected by copyright or trade secret rights that are owned or created by any third-party, they have obtained permission for its use consistent with the foregoing. They will provide OCP evidence of such permission upon OCP’s request. This document and any "Materials" are published on the respective project's wiki page and are open to the public in accordance with OCP's Bylaws and IP Policy. This can be found at http://www.opencompute.org/participate/legal-documents/. If you have any questions please contact OCP.
+As a contributor to this document, all members represent that they have the authority to grant the rights and licenses herein. They further represent and warrant that the Materials do not and will not violate the copyrights or misappropriate the trade secret rights of any third party, including without limitation rights in intellectual property. The contributor(s) also represent that, to the extent the Materials include materials protected by copyright or trade secret rights that are owned or created by any third-party, they have obtained permission for its use consistent with the foregoing. They will provide OCP evidence of such permission upon OCP’s request. This document and any "Materials" are published on the respective project's wiki page and are open to the public in accordance with [OCP's Bylaws and IP Policy](http://www.opencompute.org/participate/legal-documents/). If you have any questions please contact OCP.
 
 
 
