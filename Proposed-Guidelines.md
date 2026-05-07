@@ -136,6 +136,9 @@ This document defines the technical details for one of the following types of sp
 <!-- think about putting a spec decision tree for choosing the specification type -->
 
 # Guidelines  
+
+Blank pages shall not be included in the specification. Any page that would otherwise be blank due to document pagination must either be removed or, if intentionally required, clearly marked with the statement: “This page intentionally left blank.”
+
 ## GitHub  
 The following guidelines, together with applicable OCP IT policies, define the expectations for software contributions that incorporate GitHub‑sourced repositories.
 ### Licensing Requirements  
@@ -159,7 +162,7 @@ Specifications have a defined process and associated templates. Any specificatio
 - Maintain version control per the specification process. The version **shall** use a tag for the specific version. 
 - 
 ### Repository Documentation Requirements
-Every repository referenced within a contribution **SHALL** include a README.md containing at minimum:
+Every repository referenced within a contribution **SHALL** include a README.md (or similar file) containing at minimum:
 - Repository Description  
 A clear statement of purpose and how the repository is used within the contribution.
 - Internal and external dependencies
@@ -183,6 +186,8 @@ All specifications shall be written in English, and any recognized variant of En
 ToDo: complete this section
 
 
+<!-- should add in guidelines re interfacing with other standard bodies. i.e., have member that is in project interfacing & gaining alignment with other std body (DMTF, PCI...) -->
+
 <!-- Modification of industry standard disallowed, must request change to the industry standard. Compliance.  Augmentation allowed. configuration/profiles, or otherwise selecting feature is acceptable as long as it remains compliant to the standard. -->
 
 question: Is there a better process to address OCP specification questions than an email to the project group.io?
@@ -204,7 +209,8 @@ Indicates flexibility of choice (option) with no implied preference.
 
 Normative language shall be invariant to capitalization. This was chosen for simplicity as most authors do not rigorously follow the "all capitalized" standard. Authors following the invariant to capitalization guideline SHALL NOT use the keywords in their normal English meanings.   
 
-The normative language above was selected for consistency and ease of implementation. This guidance is not intended to be restrictive. Conformance with the terminology defined in IETF RFCs 2119 and 8174 is acceptable. Regardless of capitalization choices, the selected convention must be documented in the "Conventions" section and applied uniformly throughout the document.
+The normative language above was selected for consistency and ease of implementation. This guidance is not intended to be restrictive. Conformance with the terminology defined in IETF RFCs 2119 and 8174 is acceptable.  
+Regardless of capitalization choices, the selected convention must be documented in the "Conventions" section and applied uniformly throughout the document.
 
 **All specifications shall utilize normative language.** 
 
@@ -228,7 +234,7 @@ Referencing helps prevent binding the specification to a specific version unless
 
 **When Inclusion Is Necessary** 
 - Use Original Wording  
-Describe the information in your own words whenever possible. 
+Describe the information in your own words whenever possible as summarizing is safe. 
 - If Direct Inclusion Is Required  
 Clearly state the source of the material.  
 Ensure all legal and usage requirements are met (e.g., copyright notices, required attribution). 
@@ -243,12 +249,24 @@ Examples of allowed sources include:
 
 
 ## Vendor Information
-
 1. **Neutral Treatment of Vendors**  
-Vendors must not be promoted or demoted in any documentation, communication, or system configuration.
-2. **Component References**  
-To the extent possible, avoid recommending components that can only be sourced from a single vendor. When a sole-sourced item is unavoidable, use neutral language such as “component XYZ or equivalent,” or consider defining a component specification that enables multiple vendors
+All specifications shall treat vendors in a strictly neutral manner. Vendors must not be explicitly or implicitly promoted, preferred, endorsed, or disparaged.
+Specifications should avoid references that could be interpreted as favoring a particular supplier, brand, product line, or proprietary implementation. Language, examples, and diagrams must be written to reflect functional or performance-based **requirements** rather than vendor-specific solutions.  
+Where examples are provided for clarity, they must be clearly identified as illustrative only and must not imply recommendation, certification, or exclusion of alternative solutions. Consistent neutral terminology should be used throughout to reinforce fairness, transparency, and equal opportunity for all compliant vendors.  
+  
 
+2. **Component References and Sourcing**
+To the greatest extent practicable, specifications should avoid recommending or requiring components or technologies that can be sourced from only a single vendor. Requirements should be expressed in terms of measurable performance characteristics, functional capabilities, interfaces, and compliance with open or widely adopted standards.  
+When use of a sole-sourced or proprietary component is unavoidable due to technical, regulatory, or compatibility constraints, the specification should:
+- Use neutral, non-branded language such as “component XYZ or equivalent,” and
+- Clearly define the minimum functional, performance, and interoperability criteria an equivalent component must meet.  
+
+Where feasible, authors should define component specifications or interface requirements that allow multiple vendors to provide compliant implementations. This approach promotes competition, encourages innovation, reduces vendor lock-in, and supports long-term sustainability of the specification.  
+Any constraints that limit multi-vendor sourcing should be explicitly documented, including the rationale and any anticipated plans to remove or mitigate such limitations in future revisions.
+
+Examples of neutral references:
+- [component] meeting the specified requirements are listed below:
+- Acceptable [components] include, but are not limited to, the following:
 
 ## Versioning
 Versioning shall follow the format: **Major.minor.patch/errata (M.m.p)**
@@ -280,8 +298,8 @@ Additional Notes
 Maintaining consistency within specifications is critical to ensuring quality. Authors sometimes wish to include additional information that falls outside the approved specification template or does not align with its intended purpose.
 
 **No content beyond the defined template structure shall be added.**
-The template provides flexibility for including supplementary details in the appendix section.
-
+The template provides flexibility for content including supplementary details in the appendix section.
+**To be done**: resolve CLA not including the appendix
 
 # Project Review Guidelines and Checklist
 ## Guidelines
@@ -318,7 +336,7 @@ This section will be more a detailed direction enumeration than an explicit chan
 - publish a proposed base template which is a blank template with instructions as a separate document. The purpose is to ensure the template clearly displays the mandatory sections as well as shows the lack of mandate (flexibility) within the body.
 - Specification Guidelines serve as the framework for expectation alignment (i.e., mandates)
   - Normative language is required.
-  - Revisioning is simplified.
+  - Versioning is simplified.
   - The compliance section has been removed. This does not mean specifications will lack compliance requirements; rather, the format is under discussion. If requirement language is mandated, compliance becomes a summary of those requirements. (Status: WIP)
   - The requirement for product specifications to include design file contributions has been omitted. The community has not consistently followed this guidance, and its role needs to be reconsidered within the broader scope of contributions.
   - Additional guidance has been added for aspects such as vendor language and references.

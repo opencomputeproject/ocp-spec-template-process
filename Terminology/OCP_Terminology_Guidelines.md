@@ -8,7 +8,6 @@ released: true
 class: info
 date: 2026-03-13
 paragraph_numbering: no
-line_numbering: yes
 header-includes: |
   \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
 ...
@@ -16,6 +15,7 @@ header-includes: |
 
 \tableofcontents
 
+\listoftables
 
 ---
 
@@ -29,6 +29,9 @@ header-includes: |
 
 ---
 
+```{=latex}
+\linenumbers
+``` 
 # Introduction
 
 The ideals behind open sourcing stipulate that everyone benefits when we share and work together. Any open source project is designed to promote collaborative sharing of design elements with peers and to help each other learn from, adopt, or enhance shared contributions in a professional and inclusive manner. The Open Compute Project Foundation (OCP) operates within these ideals, and therefore requires that terminology that could be considered offensive be eliminated from any material.
@@ -48,6 +51,7 @@ Specifically examples include:
 
 ## Racial Language
 
+Table: Racial Language {#tbl:Racial-Language}
 |**Deprecated Terminology** | **Preferred Terminology** | **Typical Usage** |
 | :---         | :---       | :---      |
 | Whitelist, White List, Whitelisted, Whitelisting | allowlist, include, accept, allow, Unblocked list, Permit list, Accept list, Inclusions | A list of devices, people or things considered to be acceptable or trustworthy. Example: "the software creates an Allow List of known good senders." |
@@ -63,6 +67,7 @@ Specifically examples include:
 
 ## Gendered Language
 
+Table: Gendered Language {#tbl:Gendered-Language}
 **Deprecated Terminology** | **Preferred Terminology** | **Usage**
 | :---         | :---       | :---      |
 | Man-hour, man-day, and other derivatives, including plural forms | person-hour, person-day, fte-hour, fte-day, work-hour, work-day, human effort – and plural forms | Amount of work that can be done by one person within a period of time. |
@@ -72,6 +77,7 @@ Specifically examples include:
 
 ## Violence or War Language
 
+Table: Violence or War Language {#tbl:Violence-War-Language}
 **Deprecated Terminology** | **Preferred Terminology** | **Usage**
 | :---                     | :---                      | :---                         |
 | abort, aborted, kill, killed | end/ended, halt, cancel, interrupt, stop/stopped | intentionally stopping, halting, or ending a process, operation, or task before it completes |
@@ -81,6 +87,7 @@ Specifically examples include:
 
 # Signal Names & Pin Names
 
+Table: Signal & Pin Names {#tbl:Signal-Pin-Names}
 Deprecated Terminology | Preferred Terminology | Usage
 | :---         | :---       | :---      |
 | SS – Slave Select | CS – Chip Select | Activated by the controller to initiate communication with a given peripheral. |

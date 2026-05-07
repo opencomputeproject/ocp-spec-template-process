@@ -1,6 +1,7 @@
 <!-- The intent for this file is to have the necessary instructions for the base spec template. We may find this unnecessary and simply integrate into the template. -->
 
 **Table of Contents for Instructions** 
+- [Formatting](#formatting)
 - [Title Page](#title-page)
 - [Table of Contents](#table-of-contents)
 - [Table of Figures](#table-of-figures)
@@ -35,10 +36,19 @@
   - [Appendix D](#appendix-d)
 
 ---
+# Formatting
+The specification must follow the template format and meet the additional requirements below:
+- Text color shall be black
+- font shall be rendered as TBD (Calibri)
+  - body text TBDpt (12pt)
+  - Heading 1 TBDpt
+  - ...
+- Bold, underline, italics and other font modifiers are allowed as needed for clarity & emphasis
 
 # Title Page
 **This section is mandatory.**  
 The title page shall have the specification name, the revision, the publication date, as well as the enumeration of authors.  
+Providing a project, sub‑project, or workstream designation is optional since the contribution process already records the relevant project in the listing.
 Limit the entry for each Author to their name and, if desired, their company affiliation  or approved designation (such as "individual") if unaffiliated. Marketing elements, including logos or promotional content, are not permitted.
  
 # Table of Contents
