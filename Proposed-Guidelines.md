@@ -32,6 +32,7 @@ Date:
   - [GitHub](#github)
     - [Licensing Requirements](#licensing-requirements)
     - [Preferred Repository Hosting](#preferred-repository-hosting)
+    - [Repository Content](#repository-content)
     - [Specifications](#specifications)
     - [Repository Documentation Requirements](#repository-documentation-requirements)
     - [No Guidelines](#no-guidelines)
@@ -151,10 +152,18 @@ The following guidelines, together with applicable OCP IT policies, define the e
 - Use of non‑OCP GitHub repositories is acceptable when:
   - The repository uses an OCP‑approved license, and
   - The contributor evaluates long‑term maintenance, availability, and lifecycle risks. 
-- For long‑term viability, contributors **should** consider pulling non‑OCP sources into an appropriate OCP repository—especially when:
+- For long‑term viability, contributors **should** consider pulling non‑OCP sources into an appropriate OCP repository  
+  especially when:
   - it supports stability,
   - Customization or patches are anticipated, or
   - Dependency longevity is critical.
+### Repository Content
+Repositories should contain only material that is covered by, and permitted under, the repository’s chosen license.  
+
+Repositories must not include confidential, proprietary, restricted, or otherwise non-public information belonging to any organization, company, individual, or third party. 
+
+Contributors are responsible for ensuring that all submitted content is either their own original work, properly licensed for inclusion, or otherwise authorized for use and redistribution under the repository’s license. Any content with unclear ownership, licensing restrictions, or confidentiality concerns should not be added to the repository until the issue has been reviewed and resolved.
+
 ### Specifications
 Specifications have a defined process and associated templates. Any specifications hosted from repositories **shall**:  
 - align to/follow the appropriate specification template. This **shall** be measured via the PDF rendering submitted for the contribution 
