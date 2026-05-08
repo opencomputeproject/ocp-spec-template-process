@@ -1,0 +1,33 @@
+%% Mermaid Diagram %%
+---
+title: Contribution Decision Flow
+---
+
+flowchart TD
+    AA[Start] --> AB{influence a direction?}
+    AB -- Yes --> AC{defining requirements?}
+    AC -- Yes --> AD[Contribution is Requirements Document]
+    AC -- No  --> AE{Are you providing real world evidence?}
+    AE -- Yes --> AF[Contribution is Case Study]
+    AE -- No  --> AG[Contribution is White Paper]
+    AB -- No  --> AH{Producing Standards or Guidance?}
+    AH -- Yes --> AI{Standards?}
+    AI -- Yes --> AJ{product focused?}
+    AJ -- Yes --> AK[Contribution is Product Spec]
+    AJ -- No  --> AL{Design focused?}
+    AL -- Yes --> AM[Contribution is Design Spec]
+    AL -- No  --> AN[Contribution is Base Spec]
+    AI -- No  --> AO{creating blueprint?}
+    AO -- Yes --> AP[Contribution is a Reference Architecture]
+    AO -- No  --> AQ[Contribution is a guideline]
+    AH -- No  --> AS{Design/Implementation?}
+    AS -- Yes --> AT{modeling, Construction, and analysis?}
+    AT -- No  --> AU{HW?}
+    AU -- Yes --> AV[Contribution is a Design Package]
+    AU -- No  --> AW[Contribution is Source Code]
+    AT -- Yes --> AX[Contribution is Tools]
+    AS -- No  --> AY{Validated Deployments?}
+    AY -- Yes --> AZ[Contribution is Tested Configuration]
+    AY -- No  --> BA{Real-world reference point?}
+    BA -- Yes --> BB[Contribution is a Benchmark]
+    BA -- No  --> BC[Contribution is Errata]
