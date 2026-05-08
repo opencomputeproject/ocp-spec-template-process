@@ -1,66 +1,36 @@
-<!-- The intent for this file is to be a clean template w/o any embedded instructions. -->
+---
+title: Specification Template
+project: A Project
+version: Version xx
+supersedes: Version aa
+status: draft
+released: false
+class: info
+date: 2026-05-08
+paragraph_numbering: no
+header-includes: |
+  \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
+...
+---
 
-![OCP Logo](../images/OCP-logo.png)
+\tableofcontents
 
-# SPEC, Base, NAME
-
-Revision: 
-
-Date:
-
-Authors: 
+\listoftables
 
 ---
 
-# Revision History
+**Revision History**
 
-| Revision      | Date       | Author(s)          | Description                                                                            |
-| :------------ | :--------- | :------------------------------ | :------------------------------------------------------------------------------------- |
-| xxx | YYYY-MM-DD | xxxx  | xxxx |
-| xxx | YYYY-MM-DD | xxxx  | xxxx |
-
----
-
-# Table of Contents
-- [Revision History](#revision-history)
-- [License](#license)	
-   - [Open Web Foundation (OWF) CLA](#open-web-foundation-owf-cla)
-   - [Acknowledgements](#acknowledgements)
-- [Copyright / Trademark  ](#copyright--trademark) 
-- [Compliance with OCP Tenets](#compliance-with-ocp-tenets)
-   - [Openness](#openness)
-   - [Efficiency](#efficiency)
-   - [Impact](#impact)
-   - [Scale](#scale)
-   - [Sustainability](#sustainability)
-- [Introduction](#introduction)
-   - [Purpose of the Document](#purpose-of-the-document)
-   - [Scope](#scope)
-   - [Audience](#audience)
-   - [Conventions](#Conventions)
-- [Overview](#overview)
-   - [Description](#description)
-   - [Goals, Vision, Objectives](#goals-vision-objectives)
-   - [User Requirements/User Stories](#user-requirementsuser-stories)
-   - [Solution Architecture](#solution-architecture)
-- [Main Section A](#main-section-a)
-- [Main Section B](#main-section-b)
-- [Main Section C](#main-section-c)
-- [Appendix](#appendix)
-   - [Glossary](#glossary-and-abbreviations)
-   - [References](#references)
-   - [Requirement Summary](#requirement-summary)
-   - [Appendix D](#appendix-d)
+| Revision | Date       | Author(s)    | Description                     |
+| :---     | :---       | :---         | :---                            |
+| xx       | YYYY/MM/dd | Names(s)     | Text                            |
+| xx       | YYYY/MM/dd | Names(s)     | Text                            |
+| xx       | YYYY/MM/dd | Names(s)     | Text                            |
 
 ---
-
-# Table of Figures
-
----
-
-# Table of Tables
-
----
+```{=latex}
+\linenumbers
+```   
 
 # License
 ## Open Web Foundation (OWF) CLA
