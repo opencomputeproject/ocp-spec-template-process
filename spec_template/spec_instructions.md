@@ -1,43 +1,39 @@
-<!-- The intent for this file is to have the necessary instructions for the base spec template. We may find this unnecessary and simply integrate into the template. -->
-
-**Table of Contents for Instructions** 
-- [Formatting](#formatting)
-- [Title Page](#title-page)
-- [Table of Contents](#table-of-contents)
-- [Table of Figures](#table-of-figures)
-- [Table of Tables](#table-of-tables)
-- [Revision History](#revision-history)
-- [License](#license)
-  - [Acknowledgements](#acknowledgements)
-- [Copyright / Trademark](#copyright--trademark)
-- [Compliance with OCP Tenets](#compliance-with-ocp-tenets)
-  - [Openness](#openness)
-  - [Efficiency](#efficiency)
-  - [Impact](#impact)
-  - [Scale](#scale)
-  - [Sustainability](#sustainability)
-- [Introduction](#introduction)
-  - [Purpose of the Document](#purpose-of-the-document)
-  - [Scope](#scope)
-  - [Audience](#audience)
-  - [Conventions](#conventions)
-- [Overview](#overview)
-  - [Description](#description)
-  - [Goals, Vision, Objectives](#goals-vision-objectives)
-  - [User Requirements/User Stories](#user-requirementsuser-stories)
-  - [Solution Architecture](#solution-architecture)
-- [Main Section A](#main-section-a)
-- [Main Section B](#main-section-b)
-- [Main Section C](#main-section-c)
-- [Appendix](#appendix)
-  - [Glossary and Abbreviations](#glossary-and-abbreviations)
-  - [References](#references)
-  - [Requirement Summary](#requirement-summary)
-  - [Appendix D](#appendix-d)
-
 ---
-# Formatting
-The specification must follow the template format and meet the additional requirements below:
+title: Specification Template Instructions
+project: Foundation Staff
+version: DRAFT
+supersedes: Version aa
+status: draft
+released: false
+class: info
+date: 2026-05-28
+paragraph_numbering: no
+header-includes: |
+  \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
+...
+
+\tableofcontents
+
+---  
+
+**Revision History**
+
+| Revision | Date       | Author(s)    | Description                     |
+| :---     | :---       | :---         | :---                            |
+| xx       | YYYY/MM/dd | Names(s)     | Text                            |
+| xx       | YYYY/MM/dd | Names(s)     | Text                            |
+| xx       | YYYY/MM/dd | Names(s)     | Text                            |
+
+---  
+
+```{=latex}
+\linenumbers
+```   
+
+***Formatting***  
+
+The specification must follow the template format and meet the additional requirements below:  
+
 - Text color shall be black
 - font shall be rendered as TBD (Calibri)
   - body text TBDpt (12pt)
@@ -45,36 +41,39 @@ The specification must follow the template format and meet the additional requir
   - ...
 - Bold, underline, italics and other font modifiers are allowed as needed for clarity & emphasis
 
-# Title Page
+***Title Page***  
+
 **This section is mandatory.**  
 The title page shall have the specification name, the revision, the publication date, as well as the enumeration of authors.  
-Providing a project, sub‑project, or workstream designation is optional since the contribution process already records the relevant project in the listing.
+
+Providing a project, sub‑project, or workstream designation is optional since the contribution process already records the relevant project in the listing.  
+
 Limit the entry for each Author to their name and, if desired, their company affiliation  or approved designation (such as "individual") if unaffiliated. Marketing elements, including logos or promotional content, are not permitted.
  
-# Table of Contents
+***Table of Contents*** 
+
 **This section is mandatory.**  
 The table of contents shall enumerate the primary and secondary sections of the specification.
 
-# Table of Figures
-**This section is mandatory.**  
-The table of figures shall enumerate the figures within the main body of the specification.
+***Table of Figures***  
 
-# Table of Tables
 **This section is mandatory.**  
-The table of tables shall enumerate the tables within the main body of the specification.
+The table of figures shall enumerate the figures within the main body of the specification.  The only exception is when no figures are used, this section shall be omitted.
 
-# Revision History
+***Table of Tables***  
+
+**This section is mandatory.**  
+The table of tables shall enumerate the tables within the main body of the specification.   The only exception is when no tables are used, this section shall be omitted.
+
+***Revision History*** 
+
 **This section is mandatory.**  
 Record revision, publish date, authors and the high level changes made for the revision.  
 You may have an appendix with a more detailed change enumeration if you desire.
 
-# License
+# Acknowledgements
 **This section is mandatory.**  
-The template language is fixed, the only action necessary is to enumerate the contributor Name(s) or Company name(s)
-
-## Acknowledgements
-**This section is mandatory.**  
-List all companies or individuals who may have assisted you with the specification by providing feedback and suggestions but did not provide any IP. Limit the entry for each contributor to their name and, if desired, their company affiliation or approved designation (such as "individual") if unaffiliated. Marketing elements, including logos or promotional content, are not permitted.
+List all contributors (CLA signatories), as well as companies or individuals who may have assisted you with the specification by providing feedback and suggestions but did not provide any IP. Limit the entry for each contributor to their name and, if desired, their company affiliation or approved designation (such as "individual") if unaffiliated. Marketing elements, including logos or promotional content, are not permitted.
 
 # Copyright / Trademark  
 **This section is mandatory.**  
@@ -109,7 +108,7 @@ Your contribution must be sustainable, maximizing transparency of environmental 
 no text necessary in this section, simply the header
 
 ## Purpose of the Document
-Clearly state the reason for creating this document, explain what it aims to achieve. 
+Clearly state the type of specification this is (per OCP contribution taxonomy), reason for creating this document, explain what it aims to achieve. 
 
 ## Scope
 Define the boundaries of the document. Specify what is included and what is explicitly excluded. This helps prevent misunderstandings about coverage. 
@@ -146,7 +145,8 @@ For fundamental architectural level specifications, this section should be prese
 
 # Main Section A
 The sections labeled “Main Sections” constitute the main body of the document and are intentionally generic, allowing the author(s) to adapt them to the specific needs of the project. These sections should define requirements across multiple domains and may be organized in a structure that best supports the specification’s objectives.  
-Examples of sections within the main body:
+Examples of sections within the main body:  
+
 - HW specification: may address domains such as performance, mechanical, electrical, thermal, manageability, security, reliability, and regulatory compliance.
 - SW specification: May cover domains such as data architecture, interfaces & protocols, performance & scalability, security, maintainability, test & validation.
 - Domain level base specification: Could incorporate any or all of the above examples customized to meet the requirements of the specific dmain.
@@ -154,8 +154,27 @@ Examples of sections within the main body:
 # Main Section B
 # Main Section C
 
+# Compliance
+**This section is mandatory.**
+Define explicitly what it means to be compliant with the specification.  
+A base specification should describe what a design must accomplish to achieve compliance.  
+A design specification should describe how it satisfies the base specification (as applicable) and define what a product must implement to be compliant.  
+A Product specifications should describe how it satisfies the compliance requirements of the corresponding design specification.  
+ 
+Ideally, compliance should be presented as a table that summarizes all requirements, clearly indicating whether each is mandatory or optional.
+
+# License
+**This section is mandatory.**  
+The template language is fixed, the only action necessary is to enumerate companies who have signed the CLA to participate in the contribution.   
+Note that contributing companies must be OCP members.
+
+---  
+
+\beginappendices  
+
 # Appendix
-no text necessary in this section, simply the header
+no text necessary in this section, simply the header  
+
 ## Glossary and Abbreviations
 **This section is mandatory.**  
 Enumerate all unique definitions and abbreviations utilized in the specification.
@@ -169,6 +188,6 @@ ToDo: examples
 **This section is mandatory if requirement language is utilized.**  
 ToDo: need to define the specific style
 
-## Appendix D
+## Another Appendix Section
 **This section is optional.**  
 Use additional sub-sections for other detail which need to be captured
