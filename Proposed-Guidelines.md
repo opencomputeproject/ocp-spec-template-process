@@ -1,69 +1,52 @@
-![OCP Logo](./images/OCP-logo.png)
+---
+title: Guidelines for OCP Specifications
+project: Foundation Staff
+version: DRAFT
+supersedes: Version aa
+status: DRAFT
+released: false
+class: info
+date: 2026-05-28
+paragraph_numbering: no
+header-includes: |
+  \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
+...
 
-# Proposed Guidelines for OCP Specifications
+\tableofcontents
 
-Revision: 
-
-Date:
 
 ---
 
-# Version Table
-| **Date** | **Revision** | **Author** | **Notes** |
-| :---     | :---         | :---       | :---      |
+
+**Revision History**
+
+| Revision | Date       | Author(s)    | Description                     |
+| :---     | :---       | :---         | :---                            |
 | WIP      | WIP          | Russ Wunderlich (OCP) | see appendix for detailed WIP changes |
-|          |              |            |           | 
+| xx       | YYYY/MM/dd | Names(s)     | Text                            |
 
----
+---  
 
-# Table of Contents
-- [Proposed Guidelines for OCP Specifications](#proposed-guidelines-for-ocp-specifications)
-- [Version Table](#version-table)
-- [Table of Contents](#table-of-contents)
-- [Goal](#goal)
-- [Scope](#scope)
-- [Specification Usage and Types](#specification-usage-and-types)
-  - [Usages](#usages)
-  - [Types](#types)
-    - [Base](#base)
-    - [Design](#design)
-    - [Product](#product)
-- [Guidelines](#guidelines)
-  - [GitHub](#github)
-    - [Licensing Requirements](#licensing-requirements)
-    - [Preferred Repository Hosting](#preferred-repository-hosting)
-    - [Repository Content](#repository-content)
-    - [Specifications](#specifications)
-    - [Repository Documentation Requirements](#repository-documentation-requirements)
-    - [No Guidelines](#no-guidelines)
-  - [Language Convention](#language-convention)
-  - [Modification of non-OCP industry standards](#modification-of-non-ocp-industry-standards)
-  - [Normative Language](#normative-language)
-  - [References](#references)
-  - [Use of Non-OCP Document Information](#use-of-non-ocp-document-information)
-  - [Vendor Information](#vendor-information)
-  - [Versioning](#versioning)
-  - [Information outside of specification scope](#information-outside-of-specification-scope)
-- [Project Review Guidelines and Checklist](#project-review-guidelines-and-checklist)
-  - [Guidelines](#guidelines-1)
-    - [OCP Foundation Staff Review](#ocp-foundation-staff-review)
-- [Appendix - detailed Change list](#appendix---detailed-change-list)
+```{=latex}
+\linenumbers
+```   
 
 # Goal
-The goal of this document is to provide the framework for OCP Specification contributions. 
+The purpose of this document is to define the framework for OCP Specification contributions. It complements the specification template, associated guidance, and the Contribution Taxonomy by providing additional depth, clarity, and specificity.  
 
-This is a working version presenting an initial, evolving framework intended to establish alignment and guide future refinements.
+This is a working version presenting an evolving framework intended to establish alignment and guide future refinements.  **FEEDBACK IS GREATLY APPRECIATED**
 
 # Scope
 The framework will establish a common approach by aligning expectations, providing guidelines, and offering instructions for creating specification contributions.
 
 - Expectations: Define what is required from contributors to meet specification standards.
-- Guidelines: Outline the recommended structure and content for specifications.
-- Instructions: Detail how to use the provided template to create and submit your specification.
-
+- Guidelines: Outline the recommended structure, mapping, and content for specifications.
+- Instructions: Describe how to use the provided template to create and submit a specification. The template and the instructions are provided as separate documents.  
+  
 # Specification Usage and Types
-The scope of contributions within OCP is broad, ranging from silicon to systems, and from individual systems to complete data centers.
-To enable specifications across this wide span, we start with high-level constructs and incorporate significant flexibility to accommodate diverse needs.
+The scope of contributions within OCP is broad, spanning from silicon to complete systems, and from individual components to full data center implementations. To support specifications across this wide spectrum, the framework begins with high-level constructs and incorporates sufficient flexibility to accommodate diverse use cases and requirements.  
+
+This approach aligns with a specification template that focuses on the core framework, supported by complementary instructions and guidelines.
 
 ## Usages
 For any framework to succeed, it must be grounded in a clear understanding of use cases. To guide the framework definition, three primary usage categories are identified:
@@ -80,7 +63,7 @@ For any framework to succeed, it must be grounded in a clear understanding of us
 
 3. Technology development/evolution
 - Planned technology development requiring strong community engagement 
-- Planned progression through multiple revisions (0.3, 0.5, 0.8, 1.0) to achieve final, implementable results
+- Planned progression through multiple revisions (0.5, 0.8, 1.0, 2.0) to achieve final, implementable results
 - Represents the slowest progression and highest detail level
 
 These three usage categories apply across all levels, from architecture to implementation, and any contribution may align with each category throughout its revisions. When evaluating the framework, key considerations include:  
@@ -90,109 +73,281 @@ These three usage categories apply across all levels, from architecture to imple
 - Flexibility for innovation: Allowance for exploration w/o having a predefined roadmap
 
 ## Types
-The three types or layers of OCP specifications are Base, Design, and Product.
+The three types (or layers) of OCP specifications are defined: Base, Design, and Product.
 
 <img src="./images/layers.png" alt="Responsive Image" style="max-width: 50%; height: 50%;">
 
 Any or all of the layers could be utilized for any particular contribution.  
-Examples:  
 
-- A base layer defines the architecture and requirements for a nuclear power source for an AI Datacenter. The subsequent design specification details how to meet the base requirements with specific design elements and more detailed requirements for a Molten Salt Reactor (MSR). The final specification, the product spec, provides the implementation details (and potentially manufacturing files) for the "MSRv5 Power Module", a fifth generation MSR from the Nuclear Are Us store. 
-- The Nuclear Are Us store provides (only) a design specification in order to create a larger supplier base for the MSR.
+Table: Focus {#tbl:Focus}
+| **Spec Type**             | **Focus**                           |
+| :---                      | :---                                | 
+| Requirements Document[^1] | What the system must do             | 
+| Architecture spec         | High-level structure and principles |
+| Design spec               | How the system will be built        |
+| Implementation            | Actual code/configuration/design    |
+
+[^1] Not a specification but a document of requirements that may precede a specification
 
 ### Base
-The Base Specification is an architectural framework for coarse alignment providing requirements for flexible hardware and software modules/layers to interoperate. Market requirements drive Base Specifications. Without defining details of a specific design, the Base Specification may be light on IP content. This structure enables and simplifies the process for multiple parties (including potential competitors) to engage in this phase.
+The Base Specification is the highest level of definition intended to provide an architectural framework for alignment. Based on Use Cases/User Stories/market requirements, the Base Specification provides the intent (or vision), requirements, and constraints for hardware and/or software modules/layers to interoperate. The Base Specification may be light on IP content which potentially allows for broader Community engagement. 
 
-This layer defines the technical details for one of the following:  
+A base spec may contain:  
 
-- Conceptual framework for an extensible technology platform/layer, representing technical community wide consensus and possibly used as a de-facto standard
-- Requirements for a specific solution
+- A vision, purpose, and scope
+- Architecture Principles
+- High-Level Architecture definition
+- Detailed architecture (multiple layers possible)
+- Assumptions and constraints
+- Non-Functional Requirements
+- Compliance 
+This definition can be applied for both software and hardware, either stand-alone or in combination, and at many levels. 
+
+The base layer generally defines the technical details for one of the following:  
+
+- Conceptual framework for an extensible technology platform/layer, representing technical community wide consensus and used as a de-facto standard
+- Definition and requirements for a specific solution
 - Extension/modification of an existing specification 
 
 ### Design
-The design layer goes deeper than the architectural specification by detailing how the system will be implemented at the component and module level.
+The design layer satisfies the architectural specification by detailing how the system will be implemented at the next level (component, module, API etc.). The Design Specification has detail that further defines what specific role this contribution plays, and enough detailed design information that enables end users to begin the journey to realize this in the market. One or more parties may join to develop detailed design specs. Compared to the Base Specification, the design layer typically contains significantly more detail and IP. 
 
-The Design Specifications has detail that further defines what specific role this contribution plays, and enough detailed design information such as high level board layouts etc that enables end users to begin the journey to realize this in the market. One or more parties may join to develop detailed design specs. Compared to the Base Specification, this effort typically contains significantly more detail such as IP-related information. 
+A design spec may contain:  
+
+- Purpose and Scope
+- Requirements Traceability
+- Design Overview
+- Design Details
+- assumptions and constraints
+- Non-Functional Design Considerations
+- Verification and validation
 
 Design Specifications are intended to foster multiple product specifications.
 
-This document defines the technical details for one of the following types of specifications:  
+The design layer generally defines the technical details for one of the following:  
 
-- Design Specification for an intended physical hardware product type
+- An intended physical hardware or software product type
 - Modification of an existing specification (state which existing spec is being modified)
-- A specification with additional detail over the Base Specification for a product type.
+- Extension/modification of an existing specification 
 
 
 ### Product
-The product layer is an implementation-level specification providing the exacting details of the end-product. 
+The product layer is an implementation-level specification providing the exacting details of the end-product. The Product Specification captures manufacturing requirements including all design and build files which satisfy the Design Specification. 
 
-The Product Specification captures manufacturing requirements including all design and build files, building on the Design Specification. 
+A product spec may contain:  
 
-This document defines the technical details for one of the following types of specifications:  
+- Purpose and Scope
+- Requirements Traceability
+- Product Overview
+- Product Details
+- Manufacturing details
 
-- Product Specification for an intended physical hardware product type
-- Modification of an existing product specification
-- A detailed specification for a product type
+
+The product layer generally defines the technical details for one of the following:  
+
+- an implemented hardware or Software product
+- Modification of an existing product specification (also known as Profile or Profile layer)
+
+### Naming Conventions
+With the broad span of OCP specification needs, the naming of a specification becomes more difficult.  The concept here is to define a contribution type per OCP definition (Base, Design, or Product) yet allow for the tailored language needed for the usage.
+
+***Also-Known-As Examples***  
+
+- Base Specification:  
+  - Architectural Specification
+  - System Architecture Specification
+  - Platform Architecture Specification
+  - Hardware Architecture Specification
+  - Software Architecture Specification
+  - Solution Architecture
+  - Interconnect Architecture
+  - Network Architecture Specification
+  - Functional Architecture Document
+  - End-to-End System Architecture
+  - Fabric Architecture (e.g., switching fabrics, NoC)  
+  
+- Design Specification:  
+  - Component Specification
+  - Module Specification
+  - Detailed Design Specification (DDS)
+  - Interface Specification
+  - Protocol Specification
+  - Transport Specification
+  - API Specification
+  - Microarchitecture Specification
+  - Firmware Design Specification
+  - Hardware Design Specification
+  - Software Design Specification
+  - Timing Specification
+  - Power/Performance Specification (PPA spec in silicon)
+  - Data Path Specification
+  - Control Path Specification
+  - Memory Map Specification
+  - Register Map Specification
+  - IO Specification
+  - PHY Specification
+  - SerDes Specification
+  - Clocking & Reset Specification  
+  
+- Product Specification:  
+  -  Implementation Specification
+  -  *Product Name* Specification
+
+Note: A *Profile Specification* (or profile) is another term that can be utilized at both the design and product level. A profile is a constrained and/or extended version of an existing specification designed to meet the needs of a specific application or environment.
+
+**To be done**: Need to think through val & manuf side to understand mapping
 
 <!-- think about putting a spec decision tree for choosing the specification type -->
+### Examples  
+These are examples intended to illustrate the variety of uses of the layered definition. These examples are not exhaustive and perhaps not completely accurate.
+
+1. Small Modular Reactor Workflow  
+
+- Architecture Spec (High-level structure and principles)
+The OCP Community recognizes a need for small scale power generation and comes together to define the requirements and associated architecture.
+
+System goals: Small-scale power generation, Factory-built modularity, Passive safety and reduced operator dependency
+architecture & requirements: Reactor type, Integrated primary system, Passive safety systems, layout
+Key principles: Passive safety, Modularity, Simplification, Scalability
+
+- Design Spec (How the system will be built)  
+
+The OCP Community subsequently creates design specifications which detail how to satisfy the base requirements with specific design elements and more detailed requirements for a Molten Salt Reactor (MSR), High-Temperature Gas-Cooled Reactors (HTGRs), as well as a Light Water SMRs (LWRs).
+
+Reactor core design: Fuel type, geometry, refueling intervals
+Thermal-hydraulic design: Coolant flow paths, heat transfer mechanisms, Operating temperatures/pressures
+Containment & structures: Pressure vessel design, containment concepts
+Safety systems, Control systems, Protection system, Instrumentation, Regulatory
+
+- Implementation (Actual code/configuration/design)
+The Nuclear Are Us store decides to contribute a product specification which provides the implementation details (and potentially manufacturing files) for the "MSRv5 Power Module", a fifth generation MSR.   
+
+Design material: 3D CAD models, Piping & instrumentation diagrams, BOMs
+Control software 
+
+2. Silicon Design Workflow
+
+- Architecture Spec (High-level structure and principles)
+Define system goals: performance, power budget, process node targets, target markets
+Select architecture: compute mix, memory & hierarchy, interconnect (NoC topology)
+Define key principles: Parallelism strategy, Power/performance tradeoffs, Scalability and modularity 
+
+- Design Spec (How the system will be built)
+Microarchitecture definition: Pipeline stages, execution units, cache sizes, bandwidths
+Interface specifications: Protocols, clock domains
+Physical constraints: Floorplan regions, power domains, timing targets
+Verification plan: Functional coverage, simulation strategy, testbench design
+
+- Implementation (Actual code/configuration/design)
+RTL coding for a device or chiplet
+Layout files for a device or chiplet
+
+
+3. CDU (Cooling Distribution Unit) Design Workflow
+- Architecture Spec (High-level structure and principles)
+Cooling approach: Liquid cooling (direct-to-chip, immersion support)
+System-level goals: Heat removal capacity, Redundancy, form factor
+Design principles: Efficiency, Reliability and serviceability, Scalability
+
+- Design Spec (How the system will be built)
+Hydraulic design: Pump sizing, flow rates, pressure drops
+Thermal design: Heat exchanger sizing, coolant type, temperature ranges
+Control system: Sensors, PLC/control logic
+Mechanical design: Piping, manifolds, valve placement
+Safety: Leak detection, shutdown procedures
+
+- Implementation (Actual code/configuration/design)
+Detailed CAD models, BOM
+Control firmware / PLC programming
+Assembly drawings and wiring diagrams
+Fabrication, installation, and commissioning
+
+
+4. Power Delivery Workflow
+- Architecture Spec (High-level structure and principles)
+Define power hierarchy: Utility → UPS → PDU → rack → board-level VRMs
+Target requirements: Total load, Redundancy, Safety, Security
+Principles: Efficiency, Resiliency and fault tolerance, Modularity and scalability
+
+- Design Spec (How the system will be built)
+Electrical design: Voltage requirements, Transformer and rectifier sizing, connectors
+Distribution: Busbars, cabling, breaker sizing
+Protection: Grounding, surge protection, fault isolation
+Monitoring: Telemetry (voltage/current sensors, BMS integration)
+Compliance: standards
+
+- Implementation (Actual code/configuration/design)
+Electrical schematics
+PCB design
+Firmware for monitoring and control (BMC integration)
+Testing: Load testing, fault injection, commissioning
+
+5. CXL-Attached Memory Management API Workflow
+- Architecture Spec (High-level structure and principles)
+System goals: Enable dynamic pooling and sharing of memory over CXL, Support tiered memory, Optimize for bandwidth, latency, and composability
+Core architecture: root complex, CXL memory devices, Memory pool manager, API abstraction layer for applications and OS integration
+Key principles: Disaggregation, Transparency vs control (OS-managed, app-direct), QoS, Security/isolation
+
+- Design Spec (How the system will be built)
+API definition
+Software stack integration (kernel, user, Orchestration)
+Resource management (partitioning and fragmentation handling, failover/migration)
+
+- Implementation (Actual code/configuration/design)
+API implementation
+Kernel-level work
+Driver + firmware
+User-space library:
+Control plane SW:
 
 # Guidelines  
 
+## Template & Formatting    
+The most current specification template shall be used for all contributions. Once a contribution enters the submission process, defined by acceptance of its abstract, it is thereafter fixed to the template version in effect at that time. Contributors may elect to update to a later template version but shall not revert to an earlier version.
+
 Blank pages shall not be included in the specification. Any page that would otherwise be blank due to document pagination must either be removed or, if intentionally required, clearly marked with the statement: “This page intentionally left blank.”
 
-## GitHub  
-The following guidelines, together with applicable OCP IT policies, define the expectations for software contributions that incorporate GitHub‑sourced repositories.
-### Licensing Requirements  
-- All repositories incorporated into an OCP contribution **SHALL** use a license included in the OCP‑approved software licenses list (insert link to official list).
-  - Note that OCP specification follow the appropriate contribution license which may not align with the software license list.
-- Contributors **SHALL NOT** rely on repositories with ambiguous, proprietary, or incompatible licenses.  
-
-### Preferred Repository Hosting
-- It is **strongly preferred** that contributors use repositories under the official [OCP GitHub hierarchy](https://github.com/opencomputeproject). 
-- Use of non‑OCP GitHub repositories is acceptable when:
-  - The repository uses an OCP‑approved license, and
-  - The contributor evaluates long‑term maintenance, availability, and lifecycle risks. 
-- For long‑term viability, contributors **should** consider pulling non‑OCP sources into an appropriate OCP repository  
-  especially when:
-  - it supports stability,
-  - Customization or patches are anticipated, or
-  - Dependency longevity is critical.
-### Repository Content
-Repositories should contain only material that is covered by, and permitted under, the repository’s chosen license.  
-
-Repositories must not include confidential, proprietary, restricted, or otherwise non-public information belonging to any organization, company, individual, or third party. 
-
-Contributors are responsible for ensuring that all submitted content is either their own original work, properly licensed for inclusion, or otherwise authorized for use and redistribution under the repository’s license. Any content with unclear ownership, licensing restrictions, or confidentiality concerns should not be added to the repository until the issue has been reviewed and resolved.
-
-### Specifications
-Specifications have a defined process and associated templates. Any specifications hosted from repositories **shall**:  
-- align to/follow the appropriate specification template. This **shall** be measured via the PDF rendering submitted for the contribution 
-<!-- update when we align to a specific rendering flow or allow md preview -->
-- Maintain version control per the specification process. The version **shall** use a tag for the specific version. 
-- 
-### Repository Documentation Requirements
-Every repository referenced within a contribution **SHALL** include a README.md (or similar file) containing at minimum:
-- Repository Description  
-A clear statement of purpose and how the repository is used within the contribution.
-- Internal and external dependencies
-- Repository Hierarchy / Structure
-Explanation of directory layout, modules, or tooling (if applicable).
-- Dependencies on OCP‑Approved Contributions
-Include links to relevant OCP specifications or contribution database entries.
-- Contact Information (leads or support channels) as appropriate
-### No Guidelines
-No guidelines are provided for the following:
-- workflow or branching model other than statements already made
-- repository structure
-- rate of development or maintenance 
-
-
-
-## Language Convention
+### Language Convention
 All specifications shall be written in English, and any recognized variant of English spelling (e.g., British, American, Canadian, Australian) is acceptable, provided usage is consistent within each document.
 
-## Modification of non-OCP industry standards
-ToDo: complete this section
+
+### Versioning
+Versioning shall follow the format: **Major.minor.patch/errata (M.m.p)**
+
+Increment Rules:
+- Major: large functionality changes that may be incompatible with prior major version  
+- minor: Adding functionality in a backward compatible manner  
+- patch/errata: backward compatible corrections  
+
+Currently, SW shall use the patch version. All other usages shall have errata = 0 until an errata process is established.
+
+Guidelines for usage:   
+V0.3.0 = initial version with  sufficient content (e.g., TOC, vision, scope ...) to enable alignment  
+V0.5.0 = majority of content defined; some areas need additional detail  
+V0.8.0 = definition complete and implementable, though not fully reviewed  
+V1.0.0 = reviewed and implementable across all capabilities  
+V1.x.0 = use minor revisions for backward compatible changes. 
+V2.x.0 = use Major revisions for changes that may affect backward compatibility.  
+
+Additional Notes  
+
+- Initial development is indicated Major = 0 (0.m.p) and any content may change at any time
+- Additional revisions between the designated milestones are allowed but generally discouraged
+- Versioning only increments; it never decrements
+- Versioning uses only non-negative integers
+- Regarding "complete and implementable", it is acceptable for a version to include elements intended for future definition, provided these elements do not hinder the implementation of the features and functionality defined within the current version
+- Any numbering statement in the specification name is part of the name, not the version (e.g. Recliner V1 V1.0.0, Recliner V2 V1.2.0)
+
+### Information outside of specification scope
+Maintaining consistency within specifications is critical to ensuring quality. Authors sometimes wish to include additional information that falls outside the approved specification template or does not align with its intended purpose.
+
+**No content beyond the defined template structure shall be added.**
+The template provides flexibility for content including supplementary details in the appendix section.
+**To be done**: resolve CLA not including the appendix
+
+
+## Modification of non-OCP industry standards (Needs work)
+**To be done**: complete this section
 
 
 <!-- should add in guidelines re interfacing with other standard bodies. i.e., have member that is in project interfacing & gaining alignment with other std body (DMTF, PCI...) -->
@@ -231,7 +386,7 @@ For multiple related OCP specifications being developed simultaneously, cross-re
  
 It is strongly preferred not to reference a document stored on an OCP Google Drive because such documents may be transient. Instead, the preferred approach is to release the document as an associated contribution and then use the Google Drive–hosted version only for “work in progress” material.  
 
-## Use of Non-OCP Document Information
+## Use of Non-OCP Materials
 **General Principle**  
 All specifications must include only materials for which the organization holds the necessary usage rights or that are legally available for free and unrestricted use.
 
@@ -239,7 +394,7 @@ All specifications must include only materials for which the organization holds 
 - Prefer Referencing Over Incorporation  
 Whenever possible, reference external material rather than embedding it directly in the specification. 
 - Avoid Version Lock-In  
-Referencing helps prevent binding the specification to a specific version unless absolutely required. 
+Referencing helps prevent binding the specification to a specific version/content unless absolutely required. 
 
 **When Inclusion Is Necessary** 
 - Use Original Wording  
@@ -247,15 +402,6 @@ Describe the information in your own words whenever possible as summarizing is s
 - If Direct Inclusion Is Required  
 Clearly state the source of the material.  
 Ensure all legal and usage requirements are met (e.g., copyright notices, required attribution). 
-
-**Permitted Sources**  
-Permitted sources would be those which allow legally free and unrestricted use.  
- 
-Examples of allowed sources include:
-- Apache 
-- OIF 
-- MIL-SPEC 
-
 
 ## Vendor Information
 1. **Neutral Treatment of Vendors**  
@@ -277,41 +423,57 @@ Examples of neutral references:
 - [component] meeting the specified requirements are listed below:
 - Acceptable [components] include, but are not limited to, the following:
 
-## Versioning
-Versioning shall follow the format: **Major.minor.patch/errata (M.m.p)**
 
-Increment Rules:
-- Major: large functionality changes that may be incompatible with prior major version  
-- minor: Adding functionality in a backward compatible manner  
-- patch/errata: backward compatible corrections  
+## GitHub  
+The following guidelines, together with applicable OCP IT policies, define the expectations for software contributions that incorporate GitHub‑sourced repositories.
+### Licensing Requirements  
+- All repositories incorporated into an OCP contribution **SHALL** use a license included in the OCP‑approved software licenses list (insert link to official list).
+  - Note that OCP specification follow the appropriate contribution license which may not align with the software license list.
+- Contributors **SHALL NOT** rely on repositories with ambiguous, proprietary, or incompatible licenses.  
 
-Currently, SW shall use the patch version. All other usages shall have errata = 0 until an errata process is established.
+### Preferred Repository Hosting
+- It is **strongly preferred** that contributors use repositories under the official [OCP GitHub hierarchy](https://github.com/opencomputeproject). 
+- Use of non‑OCP GitHub repositories is acceptable when:
+  - The repository uses an OCP‑approved license, and
+  - The contributor evaluates long‑term maintenance, availability, and lifecycle risks. 
+- For long‑term viability, contributors **should** consider pulling non‑OCP sources into an appropriate OCP repository  
+  especially when:
+  - it supports stability,
+  - Customization or patches are anticipated, or
+  - Dependency longevity is critical.
+  
+### Repository Content
+Repositories should contain only material that is covered by, and permitted under, the repository’s chosen license.  
 
-Guidelines for usage:   
-V0.3.0 = initial version with  sufficient content (e.g., TOC, vision, scope ...) to enable alignment  
-V0.5.0 = majority of content defined; some areas need additional detail  
-V0.8.0 = definition complete and implementable, though not fully reviewed  
-V1.0.0 = reviewed and implementable across all capabilities  
-V1.x.0 = use minor revisions for backward compatible changes. 
-V2.x.0 = use Major revisions for changes that may affect backward compatibility.  
+Repositories must not include confidential, proprietary, restricted, or otherwise non-public information belonging to any organization, company, individual, or third party. 
 
-Additional Notes
-- Initial development is indicated Major = 0 (0.m.p) and any content may change at any time
-- Additional revisions between the designated milestones are allowed but generally discouraged
-- Versioning only increments; it never decrements
-- Versioning uses only non-negative integers
-- Regarding "complete and implementable", it is acceptable for a version to include elements intended for future definition, provided these elements do not hinder the implementation of the features and functionality defined within the current version
-- Any numbering statement in the specification name is part of the name, not the version (e.g. Recliner V1 V1.0.0, Recliner V2 V1.2.0)
+Contributors are responsible for ensuring that all submitted content is either their own original work, properly licensed for inclusion, or otherwise authorized for use and redistribution under the repository’s license. Any content with unclear ownership, licensing restrictions, or confidentiality concerns should not be added to the repository until the issue has been reviewed and resolved.
 
-## Information outside of specification scope
-Maintaining consistency within specifications is critical to ensuring quality. Authors sometimes wish to include additional information that falls outside the approved specification template or does not align with its intended purpose.
+### Specifications
+Specifications have a defined process and associated templates. Any specifications hosted from repositories **shall**:  
+- align to/follow the appropriate specification template. This **shall** be measured via the PDF rendering submitted for the contribution 
+<!-- update when we align to a specific rendering flow or allow md preview -->
+- Maintain version control per the specification process. The version **shall** use a tag for the specific version. 
 
-**No content beyond the defined template structure shall be added.**
-The template provides flexibility for content including supplementary details in the appendix section.
-**To be done**: resolve CLA not including the appendix
+### Repository Documentation Requirements
+Every repository referenced within a contribution **SHALL** include a README.md (or similar file) containing at minimum:
+- Repository Description  
+A clear statement of purpose and how the repository is used within the contribution.
+- Internal and external dependencies
+- Repository Hierarchy / Structure
+Explanation of directory layout, modules, or tooling (if applicable).
+- Dependencies on OCP‑Approved Contributions
+Include links to relevant OCP specifications or contribution database entries.
+- Contact Information (leads or support channels) as appropriate
+### No Guidelines
+No guidelines are provided for the following:
+- workflow or branching model other than statements already made
+- repository structure
+- rate of development or maintenance 
+
 
 # Project Review Guidelines and Checklist
-## Guidelines
+## Guidelines (Needs work)
 Define a minimal process & checklist that each workstream executes prior to contribution hub submittal  
 Checklist submitted with contribution  
 
@@ -324,7 +486,7 @@ Final form verified to requirements before uploading to contribution hub
 
 ToDo: develop checklist
 
-### OCP Foundation Staff Review
+## OCP Foundation Staff Review
 
 OCP staff review specifications not only for alignment with the approved templates and guidelines but also for technical accuracy. Staff feedback is organized into the following categories:
 - Required  
@@ -336,8 +498,14 @@ Optional feedback intended to enhance clarity or usability, but not essential fo
 - Comment  
 Captures all other observations, including occasional questions, often related to consistency or clarification needs. While questions are generally avoided at the staff‑review level, they may arise. Authors may determine if and how to address comments in this category.
 
+# Rendering Flow
 
-# Appendix - detailed Change list
+**to be done**   This section will document any additional guidelines necessary for the OCP specification rendering flow
+
+---
+\beginappendices  
+
+# Detailed Change list
 This section will be more a detailed direction enumeration than an explicit change list in order to help overall changes & direction for feedback.  
 
 **2025/12/10**
@@ -365,3 +533,13 @@ Compilation of the more significant additions/changes since last entry
 - added a Copyright/Trademark section
 - reverted Versioning to existing Major.minor.patch format with updated guidelines
 - added a detailed change list to guidelines
+
+**2026/05/10**  
+- Converted to rendering format
+- strengthened the vendor neutrality language  
+
+**2026/05/28**  
+- document structure clean-up 
+- deleted permitted sources section as this was not going to work (never be complete)
+- aligned template & instructions headers
+- reworded and expanded the specification types section 
