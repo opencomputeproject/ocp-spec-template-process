@@ -88,7 +88,7 @@ Table: Focus {#tbl:Focus}
 | Requirements Document[^1] | What the system must do             | 
 | Architecture spec         | High-level structure and principles |
 | Design spec               | How the system will be built        |
-| Implementation            | Actual code/configuration/design    |
+| Product/Implementation    | Actual code/configuration/design    |
 
 [^1] Not a specification but a document of requirements that may precede a specification
 
@@ -393,7 +393,7 @@ Regardless of capitalization choices, the selected convention must be documented
 
 For multiple related OCP specifications being developed simultaneously, cross-referencing is permitted provided that all referenced specifications have initiated the submission process to the Contribution Hub and will be submitted <u>for approval</u> no greater than three months apart.  
  
-It is strongly preferred not to reference a document stored on an OCP Google Drive since such documents may be transient. Instead, the preferred approach is to release the document as an associated contribution and then use the Google Drive–hosted version only for “work in progress” material.  
+It is strongly preferred that specifications not reference documents stored on an OCP Google Drive, as those documents may be transient. Instead, the preferred approach is to release the document as an associated contribution and use the Google Drive–hosted version only for work-in-progress material. Another preferred option is to place the associated documentation in an OCP GitHub repository and reference that repository from the specification.
 
 ## Use of Non-OCP Materials
 **General Principle**  
