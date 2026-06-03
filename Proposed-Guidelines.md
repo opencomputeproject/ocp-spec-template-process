@@ -513,7 +513,10 @@ Indicates feedback that should be addressed to improve the overall quality, clar
 - **Suggested**  
 Optional feedback intended to enhance clarity or usability, but not essential for approval.  
 - **Comment**  
-Captures all other observations, including occasional questions, often related to consistency or clarification needs. While questions are generally avoided at the staff‑review level, they may arise. Authors may determine if and how to address comments in this category.
+Captures all other observations, including occasional questions, often related to consistency or clarification needs. While questions are generally avoided at the staff‑review level, they may arise. Authors may determine if and how to address comments in this category.  
+
+**AI Content**  
+We encourage authors to use AI tools in their workflows to improve accuracy, enhance completeness, and reduce turnaround time. However, authors remain fully responsible for their content, and submissions that rely on low-quality or unedited AI-generated material may be rejected.
 
 # Rendering Flow
 

@@ -1,18 +1,25 @@
 ---
 title: Specification Template
-project: Foundation Staff
-version: Version DRAFT
+project: OCP Foundation
+version: DRAFT
+type: [Base, Design, Product]
+authors: [OCP Foundation Staff]
+bibliography: spec_template_ref.yaml
+License: 
 supersedes: Version aa
 status: draft
 released: false
-class: info
-date: 2026-05-28
+class: specification
+date: 2026-06-03
 paragraph_numbering: no
 header-includes: |
   \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
 ...  
 
+
 \tableofcontents
+
+\listoffigures
 
 \listoftables
 
@@ -104,11 +111,13 @@ Indicates flexibility of choice (option) with no implied preference.
 
 ---
 
-# Main Section A
+# Main Section A  
+[@{number1}]
 
 ---
 
-# Main Section B
+# Main Section B  
+[@{number2}]
 
 ---
 
@@ -141,6 +150,5 @@ NOTWITHSTANDING THE FOREGOING LICENSES, THIS SPECIFICATION IS PROVIDED BY OCP "A
 # Appendix  
 
 ## Glossary and Abbreviations
-## References
 ## Requirement Summary
 ## Another Appendix Section
