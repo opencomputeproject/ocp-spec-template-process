@@ -172,22 +172,18 @@ Note that contributing companies must be OCP members.
 
 \beginappendices  
 
-# Appendix
-no text necessary in this section, simply the header  
-
-## Glossary and Abbreviations
+# Glossary and Abbreviations
 **This section is mandatory.**  
 Enumerate all unique definitions and abbreviations utilized in the specification.
 
-## References
-**This section is mandatory.**  
-Enumerate & cross-link references throughout the specification  
-ToDo: examples
-
-## Requirement Summary
+# Requirement Summary
 **This section is mandatory if requirement language is utilized.**  
-ToDo: need to define the specific style
+ToDo: need to define the specific style. Also need to reconcile versus compliance
 
-## Another Appendix Section
+# Another Appendix Section
 **This section is optional.**  
 Use additional sub-sections for other detail which need to be captured
+
+# References
+**This section is mandatory.**  
+Enumerate & cross-link references throughout the specification. rendering will generate this based on the YAML file  

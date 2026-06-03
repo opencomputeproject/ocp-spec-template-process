@@ -147,8 +147,6 @@ NOTWITHSTANDING THE FOREGOING LICENSES, THIS SPECIFICATION IS PROVIDED BY OCP "A
 
 \beginappendices  
 
-# Appendix  
-
-## Glossary and Abbreviations
-## Requirement Summary
-## Another Appendix Section
+# Glossary and Abbreviations
+# Requirement Summary
+# Another Appendix Section
