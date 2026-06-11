@@ -6,7 +6,7 @@ supersedes: Version aa
 status: DRAFT
 released: false
 class: info
-date: 2026-06-08
+date: 2026-06-11
 paragraph_numbering: no
 header-includes: |
   \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
@@ -198,7 +198,7 @@ With the broad span of OCP specification needs, the naming of a specification be
 
 Note: A *Profile Specification* (or profile) is another term that can be utilized at both the design and product level. A profile is a constrained and/or extended version of an existing specification designed to meet the needs of a specific application or environment.
 
-**To be done**: Need to think through val & manuf side to understand mapping
+**To be done**: Need to think through test/val & manuf side to understand mapping. seems like there is a perceived need (there are white papers doing this) for a distinct Test & Val contribution.
 
 <!-- think about putting a spec decision tree for choosing the specification type -->
 ## Examples  
@@ -322,7 +322,7 @@ Increment Rules:
 - Major: large functionality changes that may be incompatible with prior major version  
 - minor: Adding functionality in a backward compatible manner  
 - patch/errata: backward compatible corrections
-``
+
 
 Currently, SW shall use the patch version. All other usages shall have errata = 0 until an errata process is established.
 
@@ -355,15 +355,16 @@ The template provides flexibility for content including supplementary details in
 
 **To be done**: resolve CLA not including the appendix
 
-## Modification of non-OCP industry standards (Needs work)
-**To be done**: complete this section
+## Modification of non-OCP industry standards 
+This section will be completed in Q3 update.  
+**To be done**: This section needs to be completed
 
 
 <!-- should add in guidelines re interfacing with other standard bodies. i.e., have member that is in project interfacing & gaining alignment with other std body (DMTF, PCI...) -->
 
 <!-- Modification of industry standard disallowed, must request change to the industry standard. Compliance.  Augmentation allowed. configuration/profiles, or otherwise selecting feature is acceptable as long as it remains compliant to the standard. -->
 
-question: Is there a better process to address OCP specification questions than an email to the project group.io?
+<!-- question: Is there a better process to address OCP specification questions than an email to the project group.io? -->
 
 
 ## Normative Language
@@ -387,6 +388,7 @@ Normative language shall be invariant to capitalization. This was chosen for sim
 The normative language above was selected for consistency and ease of implementation. This guidance is not intended to be restrictive. Conformance with the terminology defined in IETF RFCs 2119 and 8174 is acceptable.  
 Regardless of capitalization choices, the selected convention must be documented in the "Conventions" section and applied uniformly throughout the document.
 
+**To be done**: align and add in requirements guidelines
 
 ## References
 **All references must be to published documents. Authors shall not reference documents that have not yet been published.**  
@@ -435,6 +437,21 @@ Examples of neutral references:
 - [component] meeting the specified requirements are listed below:  
 - Acceptable [components] include, but are not limited to, the following:
 
+## Compliance
+This section will be completed in Q3 update.  
+**To be done**: This section needs to be completed  
+
+The compliance section is intended to summarize the requirements such that it is clear how "satisfying the requirement" is measured. Generally this is simply a summation in the form of a traceability matrix.
+
+Table: Example Traceability Matrix {#tbl:TR_Matrix}
+| **ID** | **Requirement**                           | **Type** | **Satisfies** | **Verification** | **Modality** |
+| :---   | :---                                      | :---      | :---         | :---             | :---      |  
+| SYS-12 | The vehicle shall accelerate from 0–60 mph in ≤ 8.0 seconds under standard test conditions             | System | Customer need: performance & drivability | Vehicle acceleration test (instrumented track measurement) | Mandatory |  
+| PWR-3  | The powertrain shall deliver a minimum of 150 hp while maintaining fuel efficiency ≥ 30 mpg (combined) | Power  | SYS-12 | Dynamometer testing and fuel economy test (EPA cycle) | Mandatory |  
+| ID-4   | The vehicle exterior design shall comply with aerodynamic drag coefficient ≤ 0.30                      | ID     | SYS-12 | Wind tunnel testing | Recommended |  
+| ID-7   | The vehicle exterior design shall maintain brand styling guidelines                                    | ID     | Business need: brand Guidelines | design review approval | Optional |  
+
+Modality: Mandatory, Optional, Recommended
 
 ## GitHub  
 The following guidelines, together with applicable OCP IT policies, define the expectations for software contributions that incorporate GitHub‑sourced repositories.  
@@ -490,8 +507,10 @@ No guidelines are provided for the following:
 - rate of development or maintenance 
 
 # Project Review Guidelines and Checklist
-## Guidelines (Needs work)
-**to be done**   Define a minimal process & checklist that each workstream executes prior to contribution hub submittal. Checklist submitted with contribution.  
+## Guidelines
+This section will be completed in Q3 update. 
+
+**To be done**   Define a minimal process & checklist that each workstream executes prior to contribution hub submittal. Checklist submitted with contribution.  
 
 Expectations  
 
@@ -519,8 +538,9 @@ Captures all other observations, including occasional questions, often related t
 We encourage authors to use AI tools in their workflows to improve accuracy, enhance completeness, and reduce turnaround time. However, authors remain fully responsible for their content, and submissions that rely on low-quality or unedited AI-generated material may be rejected.
 
 # Rendering Flow
+**To be done**: This section needs to be completed  
 
-**to be done**   This section will document any additional guidelines necessary for the OCP specification rendering flow
+**To be done**   This section will document any additional guidelines necessary for the OCP specification rendering flow
 
 ---
 \beginappendices  
@@ -569,3 +589,8 @@ Compilation of the more significant additions/changes since last entry
 - reworded and expanded the specification types section 
 - expanded examples of spec usages
 - worked on formatting consistency
+
+**2026/06/11**  
+
+- prepped document for Community review cycle (consistent wording for areas that still need completion, removed or made comments work to be done aspects ...)
+- added compliance section back in to align with the template
