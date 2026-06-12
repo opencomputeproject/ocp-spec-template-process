@@ -6,7 +6,7 @@ supersedes: Version aa
 status: DRAFT
 released: false
 class: info
-date: 2026-06-11
+date: 2026-06-12
 paragraph_numbering: no
 header-includes: |
   \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
@@ -303,6 +303,20 @@ Software: API libraries, kernel extensions
 Platform: Drivers, firmware  
 Control: Management and orchestration software  
 
+## Deciding type
+The following table provides a practical set of guiding questions to help determine the appropriate document or specification type based on the scope, intent, and level of detail being defined.
+
+Table: Questions to assist in resolving Type {#tbl:Que_type}
+| **Question**                                                                            | **Type**                                           |
+| :---                                                                                    | :---                                               | 
+| Am I defining ecosystem-wide architecture, requirements, constraints, or principles?                                                  | Base Specification |
+| Am I defining how a system, module, component, API, protocol, or interface should be built?                                           | Design Specification |
+| Am I defining an actual implementation/product with implementation, build, manufacturing, configuration, design, or source artifacts? | Product Specification |
+| Am I constraining or extending an existing specification for a specific application or environment?	                                  | Profile Specification, usually at the Design or Product level |
+| Am I modifying or extending an existing OCP specification?                                                                            | Revision, extension, or profile of the existing Base, Design, or Product specification |
+| Am I proposing a direction, concept, or background material without normative requirements?	                                          | Informational document / white paper |
+| Am I capturing what the system must do before creating a specification?                                                               | Requirements Document; not itself a specification |
+
 # Guidelines  
 
 ## Template & Formatting    
@@ -395,7 +409,9 @@ Regardless of capitalization choices, the selected convention must be documented
 
 For multiple related OCP specifications being developed simultaneously, cross-referencing is permitted provided that all referenced specifications have initiated the submission process to the Contribution Hub and will be submitted <u>for approval</u> no greater than three months apart.  
  
-It is strongly preferred that specifications not reference documents stored on an OCP Google Drive, as those documents may be transient. Instead, the preferred approach is to release the document as an associated contribution and use the Google Drive–hosted version only for work-in-progress material. Another preferred option is to place the associated documentation in an OCP GitHub repository and reference that repository from the specification.
+It is strongly preferred that specifications not reference documents stored on an OCP Google Drive, as those documents may be transient. Instead, the preferred approach is to release the document as an associated contribution and use the Google Drive–hosted version only for work-in-progress material. Another preferred option is to place the associated documentation in an OCP GitHub repository and reference that repository from the specification.  
+
+The recommended format for referencing a standard: Publisher, Standard designation:year, Full title, Publisher, URL.
 
 ## Use of Non-OCP Materials
 **General Principle**  
