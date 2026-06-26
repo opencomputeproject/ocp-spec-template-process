@@ -371,7 +371,11 @@ The template provides flexibility for content including supplementary details in
 
 ## Modification of non-OCP industry standards 
 This section will be completed in Q3 update.  
-**To be done**: This section needs to be completed
+
+discuss 
+**To be done**: This section needs to be completed. 
+intent is to discuss that OCP specifications should not be overriding requirements from other standards bodies. OCP can utilize other standards, can create profiles etc. but cannot just state "this supersedes."  if a change to a standard is required, OCP (through a member organization) must request the change in the standards body.  Alliances are special situations which may allow for direct change/inclusion of a standard.
+
 
 
 <!-- should add in guidelines re interfacing with other standard bodies. i.e., have member that is in project interfacing & gaining alignment with other std body (DMTF, PCI...) -->
@@ -439,7 +443,7 @@ Specifications should avoid references that could be interpreted as favoring a p
 Where examples are provided for clarity, they must be clearly identified as illustrative only and must not imply recommendation, certification, or exclusion of alternative solutions. Consistent neutral terminology should be used throughout to reinforce fairness, transparency, and equal opportunity for all compliant vendors.  
   
 
-2. **Component References and Sourcing**
+2. **Component References and Sourcing**  
 To the greatest extent practicable, specifications should avoid recommending or requiring components or technologies that can be sourced from only a single vendor. Requirements should be expressed in terms of measurable performance characteristics, functional capabilities, interfaces, and compliance with open or widely adopted standards.  
 When use of a sole-sourced or proprietary component is unavoidable due to technical, regulatory, or compatibility constraints, the specification should:
 - Use neutral, non-branded language such as “component XYZ or equivalent,” and
