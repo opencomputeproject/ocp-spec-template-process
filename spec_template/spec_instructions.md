@@ -81,6 +81,8 @@ Explicitly list all trademarks referenced in the specification. If none are appl
 
 While the preferred approach is to reference third-party material (see specification guidelines), if any allowable copyrighted material is utilized, include the required copyright notice in this section. If none are applicable, use "None" or "N/A.".  
 
+A generic statement may also be used when additional coverage is needed or when ownership is uncertain:  "All trademarks, service marks, certification marks, and trade names are the property of their respective owners. Use of third-party marks is for identification only and does not imply endorsement."
+
 # Compliance with OCP Tenets
 **This section and all tenets are mandatory.**  
 For each of the tenets, detail how your contribution aligns and supports the tenet.
