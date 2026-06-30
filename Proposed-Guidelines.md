@@ -436,7 +436,7 @@ Describe the information in your own words whenever possible as summarizing is s
 Clearly state the source of the material.  
 Ensure all legal and usage requirements are met (e.g., copyright notices, required attribution). 
 
-## Company-Specific Procedures, Requirements, and Labeling
+## Company-Specific Procedures and Requirements
 
 Specifications shall not include procedures, requirements, approvals, labels, lists, classifications, or compliance criteria that are specific to any company. Specifications shall not require conformance to company-controlled documents, internal approval processes, proprietary qualification lists, company-specific material lists, supplier designations, or brand-specific labels as a condition of compliance.
 
