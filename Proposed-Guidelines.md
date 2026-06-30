@@ -436,6 +436,26 @@ Describe the information in your own words whenever possible as summarizing is s
 Clearly state the source of the material.  
 Ensure all legal and usage requirements are met (e.g., copyright notices, required attribution). 
 
+## Company-Specific Procedures, Requirements, and Labeling
+
+Specifications shall not include procedures, requirements, approvals, labels, lists, classifications, or compliance criteria that are specific to any company. Specifications shall not require conformance to company-controlled documents, internal approval processes, proprietary qualification lists, company-specific material lists, supplier designations, or brand-specific labels as a condition of compliance.
+
+Requirements shall be expressed in neutral, objective, and independently verifiable terms. Specifications shall define the required function, performance, safety, reliability, material compatibility, interoperability, test method, and acceptance criteria directly within the specification or through open, neutral, and publicly accessible references.
+
+Company-specific documents, lists, procedures, or approval processes shall not be used as normative references. Such materials may be cited only as non-normative background when necessary for context and shall not be required for compliance, qualification, certification, or acceptance.
+
+Where company-specific technical information is relevant, the author shall restate the underlying requirements in vendor-neutral terms. The specification shall define the applicable operating conditions, verification method, and measurable acceptance criteria necessary to demonstrate compliance.
+
+Specifications shall not require or imply:
+1. Compliance with a specific company’s approved vendor list, material list, component list, or qualified supplier list  
+2. Use of a company-specific label, designation, logo, badge, classification, or approval mark  
+3. Completion of a company-controlled test, audit, review, or certification process  
+4. Conformance to company-specific engineering, procurement, quality, or qualification procedures  
+5. Use of proprietary terminology that implies approval, endorsement, certification, or acceptance by a specific company  
+
+Equivalent materials, components, procedures, and implementations shall be permitted when they satisfy the functional, performance, safety, interoperability, and verification requirements defined in the specification.
+
+
 ## Vendor Information
 1. **Neutral Treatment of Vendors**  
 All specifications shall treat vendors in a strictly neutral manner. Vendors must not be explicitly or implicitly promoted, preferred, endorsed, or disparaged.
