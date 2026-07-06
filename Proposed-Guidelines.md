@@ -6,7 +6,7 @@ supersedes: Version aa
 status: DRAFT
 released: false
 class: info
-date: 2026-06-12
+date: 2026-06-30
 paragraph_numbering: no
 header-includes: |
   \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
@@ -634,3 +634,8 @@ Compilation of the more significant additions/changes since last entry
 
 - prepped document for Community review cycle (consistent wording for areas that still need completion, removed or made comments work to be done aspects ...)
 - added compliance section back in to align with the template
+
+**2026/06/30**  
+
+- re- prepped document for Community review cycle
+- added company-specific procedures section, very similar to vendor-neutral section
