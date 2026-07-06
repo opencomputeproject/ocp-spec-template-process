@@ -10,7 +10,7 @@ supersedes: Version aa
 status: draft
 released: false
 class: specification
-date: 2026-06-03
+date: 2026-06-30
 paragraph_numbering: no
 header-includes: |
   \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
@@ -148,5 +148,5 @@ NOTWITHSTANDING THE FOREGOING LICENSES, THIS SPECIFICATION IS PROVIDED BY OCP "A
 \beginappendices  
 
 # Glossary and Abbreviations
-# Requirement Summary
+# References
 # Another Appendix Section

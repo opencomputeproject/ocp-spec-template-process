@@ -6,7 +6,7 @@ supersedes: Version aa
 status: draft
 released: false
 class: info
-date: 2026-05-28
+date: 2026-06-30
 paragraph_numbering: no
 header-includes: |
   \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
@@ -178,14 +178,11 @@ Note that contributing companies must be OCP members.
 **This section is mandatory.**  
 Enumerate all unique definitions and abbreviations utilized in the specification.
 
-# Requirement Summary
-**This section is mandatory if requirement language is utilized.**  
-ToDo: need to define the specific style. Also need to reconcile versus compliance
+# References
+**This section is mandatory unless no references.**  
+Enumerate & cross-link references throughout the specification. rendering will generate this based on the YAML file  
 
 # Another Appendix Section
 **This section is optional.**  
 Use additional sub-sections for other detail which need to be captured
 
-# References
-**This section is mandatory.**  
-Enumerate & cross-link references throughout the specification. rendering will generate this based on the YAML file  
