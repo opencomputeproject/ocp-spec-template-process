@@ -235,7 +235,7 @@ The OCP Community specifies microarchitectures and interfaces to enable interope
 Microarchitecture: Pipelines, execution units, caches  
 Interfaces: Protocols, clock domains  
 Constraints: Floorplan, power, timing  
-Verification: Coverage, simulation, testbenches  
+Verification: Coverage, simulation, test benches  
 
 - Implementation (Actual code/configuration/design)  
 Contributors implement silicon components aligned to the specifications.  
