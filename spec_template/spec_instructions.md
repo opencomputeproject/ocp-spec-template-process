@@ -48,7 +48,11 @@ The title page shall have the specification name, the revision, the publication 
 
 Providing a project, sub‑project, or workstream designation is optional since the contribution process already records the relevant project in the listing.  
 
-Limit the entry for each Author to their name and, if desired, their company affiliation  or approved designation (such as "individual") if unaffiliated. Marketing elements (other than OCP logo), including logos or promotional content, are not permitted.
+Limit the entry for each Author to their name and, if desired, their company affiliation or approved designation (such as "individual") if unaffiliated.  
+- Marketing elements (other than OCP logo), including logos or promotional content, are not permitted.  
+- Email addresses are not permitted.  
+Personal or individual business email addresses should not appear in the published specification since the specification should remain a durable organizational work product, not depend on individual contributors. Questions and feedback should be directed to the appropriate OCP workstream. If there is concern regarding ability for the OCP Community to provide feedback, please contact OCP Foundation Staff.
+
  
 ***Table of Contents*** 
 
