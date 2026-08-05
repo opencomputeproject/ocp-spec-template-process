@@ -434,7 +434,10 @@ Referencing helps prevent binding the specification to a specific version/conten
 Describe the information in your own words whenever possible as summarizing is safe. 
 - If Direct Inclusion Is Required  
 Clearly state the source of the material.  
-Ensure all legal and usage requirements are met (e.g., copyright notices, required attribution). 
+Ensure all legal and usage requirements are met (e.g., copyright notices, required attribution).   
+
+**Reproduction**  
+- Copyrighted material may be reproduced if all necessary permissions have been obtained. To avoid unnecessary delays, please submit documentation of these permissions with your contribution.
 
 ## Company-Specific Procedures and Requirements
 
