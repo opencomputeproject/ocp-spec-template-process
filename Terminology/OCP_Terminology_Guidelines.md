@@ -3,10 +3,10 @@ title: OCP Terminology Guidelines for Inclusion and Openness
 project: Foundation Staff
 version: Version C
 supersedes: Version B
-status: draft
+status: Release
 released: true
 class: info
-date: 2026-03-13
+date: 2026-08-27
 paragraph_numbering: no
 header-includes: |
   \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
@@ -25,7 +25,7 @@ header-includes: |
 | :---     | :---       | :---         | :---        |
 | A        | unknown    | William Carter (OCP) | Initial Release |
 | B        | 2020/12/20 | William Carter (OCP), Dell Technologies Inclusive Language Team | Added alternative language substitutions and section covering gendered language |
-| C        | TBD        | Russ Wunderlich (OCP) | created md from rev B PDF. moved preferred term to 1st item in the list. Updated terms in racial language section. Removed Rule-of-thumb from gendered language. added violence & war section |
+| C        | 2026/08/27 | Russ Wunderlich (OCP) | created md from rev B PDF. moved preferred term to 1st item in the list. Updated terms in racial language section. Removed Rule-of-thumb from gendered language. added violence & war section |
 
 ---
 
@@ -38,7 +38,7 @@ The ideals behind open sourcing stipulate that everyone benefits when we share a
 
 # Scope
 
-Deprecated Terminology should be removed from all material contributed or shared with the Open Compute Project Community. This includes all material or presentations shared during project calls, workshops and Summit events. The preferred terminology shall be applied to all community material including documentation, specifications, white papers and presentations. 
+Deprecated Terminology should be removed from all material contributed or shared with the Open Compute Project Community. This includes all materials or presentations shared during project calls, workshops and Summit events. The preferred terminology shall be applied to all community material including documentation, specifications, white papers and presentations. 
 
 Specifically examples include:  
 
