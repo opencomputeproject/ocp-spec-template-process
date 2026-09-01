@@ -482,6 +482,11 @@ Examples of neutral references:
 - [component] meeting the specified requirements are listed below:  
 - Acceptable [components] include, but are not limited to, the following:
 
+### Bill of Materials - Vendor Neutrality and Equivalent Components
+The following provides suggested language for BOMs:   
+This bill of materials represents one instantiation of the design. Manufacturer names, trade names, and part numbers identify components used in the contributed reference implementation and are provided for informational and traceability purposes only. Their inclusion does not constitute a requirement, recommendation, endorsement, preferred-source designation, or restriction to a particular vendor. Components from alternate vendors, or other functionally equivalent components, may be used provided they satisfy all applicable functional, performance, interface, interoperability, environmental, safety, reliability, regulatory, and verification requirements defined by this specification. The implementer is responsible for demonstrating conformance of any alternate component under the specified operating conditions and acceptance criteria.
+
+
 ## Compliance
 This section will be completed in Q3'26 update.  
 **To be done**: This section needs to be completed  
