@@ -329,7 +329,7 @@ All specifications shall be written in English, and any recognized variant of En
 
 
 ### Versioning
-Versioning shall follow the format: **Major.minor.patch/errata (M.m.p)**
+Versioning shall follow the format: **Major.minor.patch/errata (M.m.p)**  
 
 Increment Rules:
 
@@ -342,12 +342,13 @@ Currently, SW shall use the patch version. All other usages shall have errata = 
 
 Guidelines for usage:  
 
-- V0.3.0 = initial version with  sufficient content (e.g., TOC, vision, scope ...) to enable alignment  
-- V0.5.0 = majority of content defined; some areas need additional detail  
-- V0.8.0 = definition complete and implementable, though not fully reviewed  
-- V1.0.0 = reviewed and implementable across all capabilities  
-- V1.x.0 = use minor revisions for backward compatible changes. 
-- V2.x.0 = use Major revisions for changes that may affect backward compatibility.  
+- small v used for version indicator
+- v0.3.0 = initial version with  sufficient content (e.g., TOC, vision, scope ...) to enable alignment  
+- v0.5.0 = majority of content defined; some areas need additional detail  
+- v0.8.0 = definition complete and implementable, though not fully reviewed  
+- v1.0.0 = reviewed and implementable across all capabilities  
+- v1.x.0 = use minor revisions for backward compatible changes. 
+- v2.x.0 = use Major revisions for changes that may affect backward compatibility.  
 
 Additional Notes:  
 
@@ -356,7 +357,7 @@ Additional Notes:
 - Versioning only increments; it never decrements  
 - Versioning uses only non-negative integers  
 - Regarding "complete and implementable", it is acceptable for a version to include elements intended for future definition, provided these elements do not hinder the implementation of the features and functionality defined within the current version  
-- Any numbering statement in the specification name is part of the name, not the version (e.g. Recliner V1 V1.0.0, Recliner V2 V1.2.0)
+- Any numbering statement in the specification name is part of the name, not the version (e.g. Recliner V1 v1.0.0, Recliner V2 v1.2.0)
 - Authors are free to append "DRAFT", "Release Candidate", "RC #", or other indications of status in working versions.  The final version shall remove this language.
 
 **To be done**: Establish Errata process/guidelines
