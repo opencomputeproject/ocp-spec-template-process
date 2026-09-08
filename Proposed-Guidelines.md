@@ -6,7 +6,7 @@ supersedes: Version aa
 status: DRAFT
 released: false
 class: info
-date: 2026-06-30
+date: 2026-09-08
 paragraph_numbering: no
 header-includes: |
   \newenvironment{smallcode}{\begin{footnotesize}}{\end{footnotesize}}
@@ -470,16 +470,19 @@ Where examples are provided for clarity, they must be clearly identified as illu
 2. **Component References and Sourcing**  
 To the greatest extent practicable, specifications should avoid recommending or requiring components or technologies that can be sourced from only a single vendor or are subject to proprietary licensing requirements. Requirements should instead be expressed in terms of measurable performance characteristics, functional capabilities, interfaces, interoperability and compliance with open or widely adopted standards.   
 
-When use of a sole-sourced or proprietary component is unavoidable due to technical, regulatory, or compatibility constraints, the specification should:
+Where feasible, authors should define component and interface requirements that allow multiple vendors to provide compliant implementations. This approach promotes competition, encourages innovation, reduces vendor lock-in, and supports the specification’s long-term sustainability.  
+In this scenario, the specification should:  
+
+- Define, to the extent practicable, the minimum functional, performance, interface, and interoperability criteria that an equivalent component must meet.  
 - Use neutral, non-branded language such as “component XYZ or equivalent.” 
-- Define, to the extent practicable, the minimum functional, performance, interface, and interoperability criteria that an equivalent component must meet.
-- Describe the intended future direction, including any plans to enable open alternatives or multi-vendor sourcing.
 
-Where feasible, authors should define component and interface requirements that allow multiple vendors to provide compliant implementations. This approach promotes competition, encourages innovation, reduces vendor lock-in, and supports the specification’s long-term sustainability.
+Any constraints that limit multi-vendor sourcing must be explicitly documented, including the rationale and any anticipated plans to remove or mitigate such limitations in future revisions.   
+When use of a sole-sourced or proprietary component is unavoidable due to technical, regulatory, or compatibility constraints, the specification should:  
 
-Any constraints that limit multi-vendor sourcing must be explicitly documented, including the rationale and any anticipated plans to remove or mitigate such limitations in future revisions.
+- Describe the intended future direction, including any plans to enable open alternatives or multi-vendor sourcing. These statements shall be placed before the 1st instance of the sole-sourced or proprietary component.
 
 Examples of neutral references:  
+
 - [component] meeting the specified requirements are listed below:  
 - Acceptable [components] include, but are not limited to, the following:
 
