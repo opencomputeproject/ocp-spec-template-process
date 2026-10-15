@@ -410,7 +410,7 @@ Regardless of capitalization choices, the selected convention must be documented
 **To be done**: align and add in requirements guidelines
 
 ## References
-**All references must be to published documents. Authors shall not reference documents that have not yet been published.**  
+**References should be to published documents. Authors shall not have normative references to documents that have not yet been published.**  
 
 For multiple related OCP specifications being developed simultaneously, cross-referencing is permitted provided that all referenced specifications have initiated the submission process to the Contribution Hub and will be submitted <u>for approval</u> no greater than three months apart.  
  
