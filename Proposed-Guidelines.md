@@ -409,6 +409,11 @@ Regardless of capitalization choices, the selected convention must be documented
 
 **To be done**: align and add in requirements guidelines
 
+Each normative statement shall express exactly one testable requirement.
+Compound requirements ("X shall do A and B") shall be split into separate requirements
+unless A and B are always verified together.
+
+
 ## References
 **References should be to published documents. Authors shall not have normative references to documents that have not yet been published.**  
 
@@ -490,22 +495,92 @@ Examples of neutral references:
 The following provides suggested language for BOMs:   
 This bill of materials represents one instantiation of the design. Manufacturer names, trade names, and part numbers identify components used in the contributed reference implementation and are provided for informational and traceability purposes only. Their inclusion does not constitute a requirement, recommendation, endorsement, preferred-source designation, or restriction to a particular vendor. Components from alternate vendors, or other functionally equivalent components, may be used provided they satisfy all applicable functional, performance, interface, interoperability, environmental, safety, reliability, regulatory, and verification requirements defined by this specification. The implementer is responsible for demonstrating conformance of any alternate component under the specified operating conditions and acceptance criteria.
 
+## Marketplace
+**Marketplace criteria are not appropriate for specifications.**
+Specifications shall convey requirements through normative language and summarize in the compliance section.  The marketplace criteria rely on the compliance section of the specification and are a distinct documents.
 
 ## Compliance
-This section will be completed in Q3'26 update.  
-**To be done**: This section needs to be completed  
 
-The compliance section is intended to summarize the requirements such that it is clear how "satisfying the requirement" is measured. Generally this is simply a summation in the form of a traceability matrix.
+Every specification shall include a Compliance section that summarizes all normative requirements defined in the body of the specification. The Compliance section exists so that implementers, reviewers, test labs, and OCP Marketplace reviewers can determine conformance without re-reading the full document. It is a summary and index of the requirements. It is not a second source of them.
 
-Table: Example Traceability Matrix {#tbl:TR_Matrix}
-| **ID** | **Requirement**                           | **Type** | **Satisfies** | **Verification** | **Modality** | **New** |
-| :---   | :---                                      | :---      | :---         | :---             | :---      | :---      |  
-| SYS-12 | The vehicle shall accelerate from 0–60 mph in ≤ 8.0 seconds under standard test conditions             | System | Customer need: performance & drivability | Vehicle acceleration test (instrumented track measurement) | Mandatory | N |  
-| PWR-3  | The powertrain shall deliver a minimum of 150 hp while maintaining fuel efficiency ≥ 30 mpg (combined) | Power  | SYS-12 | Dynamometer testing and fuel economy test (EPA cycle) | Mandatory | Y |  
-| ID-4   | The vehicle exterior design shall comply with aerodynamic drag coefficient ≤ 0.30                      | ID     | SYS-12 | Wind tunnel testing | Recommended | N |  
-| ID-7   | The vehicle exterior design shall maintain brand styling guidelines                                    | ID     | Business need: brand Guidelines | design review approval | Optional | N |  
+### Requirement Identifiers
 
-Modality: Mandatory, Optional, Recommended
+- Each normative requirement in the body text shall carry a unique identifier in the form `<PREFIX>-<n>`, where `<PREFIX>` is a short uppercase tag for the functional area (for example, `MECH`, `PWR`, `THRM`, `MGMT`, `SEC`) and `<n>` is an integer.
+
+- Identifiers shall be stable across revisions. A deleted requirement's identifier shall be retired and not reused. A materially changed requirement shall keep its identifier and be marked as changed in the Compliance table.
+
+- Informative content (notes, examples, rationale, figures not marked normative) shall not carry requirement identifiers.
+
+### Compliance Table
+
+The Compliance section shall contain a table listing every normative requirement in the specification, in identifier order, with the following columns:
+
+Table: Required Compliance Table Columns {#tbl:CMP_Columns}
+| **Column** | **Content** |
+| :--- | :--- |
+| ID           | The requirement identifier, matching the body text exactly. |
+| Requirement  | The requirement text, copied verbatim or summarized without changing its meaning. |
+| Clause       | The section number where the requirement is defined. |
+| Obligation   | SHALL, SHOULD, or MAY, matching the keyword used in the body text. |
+| Verification | One or more of the methods in @tbl:CMP_Verification. |
+| Condition    | The feature, configuration, or option the requirement depends on, or "All" if it applies unconditionally. |
+| Status       | N (new in this revision), C (changed in this revision), or blank (unchanged). |
+
+Specifications may add columns (for example, "Satisfies," to trace a requirement to a parent requirement or a stakeholder need). Added columns shall not alter the meaning of the required columns.
+
+The verification method for each requirement shall be one of the following:
+
+Table: Verification Methods {#tbl:CMP_Verification}
+| **Method** | **Description** |
+| :--- | :--- |
+| Test          | Measurement under defined conditions with pass/fail criteria. The test procedure, or a reference to it, shall be identified. |
+| Inspection    | Visual or dimensional examination of hardware, drawings, firmware, or documentation. |
+| Analysis      | Calculation, simulation, or modelling (for example, thermal CFD or signal-integrity analysis). |
+| Demonstration | Operation of the implementation showing the required behavior without quantitative measurement. |
+| Declaration   | A written statement by the contributor or vendor. Use only where the other methods are impractical. |
+
+
+### Example
+
+The following example is informative. The values are illustrative.
+
+Table: Example Compliance Table {#tbl:TR_Matrix}
+| **ID** | **Requirement** | **Clause** | **Obligation** | **Verification** | **Condition** | **Status** |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| SYS-12  | The vehicle shall accelerate from 0–60 mph in ≤ 8.0 seconds under standard test conditions.                 | 4.2  | SHALL  | Test | ALL |  |  
+| PWR-3   | The powertrain shall deliver a minimum of 150 hp while maintaining fuel efficiency ≥ 30 mpg (EPA combined). | 5.3  | SHALL  | Test | ID-4 |  |  
+| ID-4    | The vehicle exterior design shall comply with aerodynamic drag coefficient ≤ 0.30.                          | 6.8  | SHALL  | Analysis, Test | ALL |  |  
+| ID-7    | The vehicle exterior design should maintain brand styling guidelines.                                       | 6.9  | SHOULD | Inspection | ALL | C |  
+| SEC-2   | Firmware images SHALL be signed and verified before execution.                                              | 7.1  | SHALL  | Test, Declaration | All | |
+| THRM-4  | The vehicle SHALL be fully functional and meet all component temperature limits at 54.4°C ambient.          | 8.2  | SHALL  | Test, Analysis | All | |
+| MGMT-9  | An interior accessible debug connector may be provided box.                                                 | 10.6 | MAY    | Inspection | All | |
+| MGMT-10 | If an interior accessible debug connector is provided, it SHALL use the pinout in Table 10-3.               | 10.6 | SHALL  | Inspection | MGMT-9 implemented | N |
+| CMR-4   | Vehicle keying may include a restricted-use physical key for valet use.                                     | 12.2 | MAY    | Test, Inspection | ALL | N |  
+
+### Integrity Rules
+
+- The Compliance section shall not introduce new requirements or change existing ones. Only the specification body may add or change requirements.
+
+- If the Compliance section and the body text conflict, the body text governs. The conflict shall be corrected in the next revision of the specification.
+
+- Every requirement identifier in the body text shall appear in the Compliance table, and every identifier in the Compliance table shall appear in the body text.
+
+- The obligation level in the Compliance table shall match the keyword used in the body text. A requirement written with SHALL shall not be listed as Recommended or Optional.
+
+### Compliance Claims
+
+- An implementation is compliant with a specification only if it meets every SHALL requirement whose Condition applies to that implementation.
+
+- A compliance claim shall identify the specification name and version.
+
+- A compliance claim shall identify optional features implemented.
+
+- Partial compliance (failing to meet one or more applicable SHALL requirements) shall not be described as compliance.
+
+### Relationship to Marketplace Criteria
+
+OCP Marketplace criteria are maintained as a separate document from the specification. They are derived from, and shall reference, the specification's Compliance section, including the specification name and version. Marketplace listing requirements shall not be embedded in the specification. Any change to a technical requirement shall be made through a revision of the specification, not through the Marketplace criteria.
+
 
 ## GitHub  
 The following guidelines, together with applicable OCP IT policies, define the expectations for software contributions that incorporate GitHub‑sourced repositories.  

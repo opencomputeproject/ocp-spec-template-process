@@ -169,6 +169,16 @@ A Product specifications should describe how it satisfies the compliance require
  
 Ideally, compliance should be presented as a table that summarizes all requirements, clearly indicating whether each is mandatory or optional.
 
+
+# Supporting Documents and Repositories
+**This section is mandatory.**
+List every normative dependency of this specification: each document or repository that an implementation must follow in order to conform. Include:
+
+- **Documents:** standards, specifications and guidelines, with title, issuing body, version or revision, publication date and stable link (e.g., DOI or URL).
+- **Repositories:** source code, schemas, firmware or data sets, with name, owner, URL and the exact release tag or commit hash that is referenced.
+
+List informative (background) references separately, not here.
+
 # License
 **This section is mandatory.**  
 The template language is fixed, the only action necessary is to enumerate companies who have signed the CLA to participate in the contribution.   
