@@ -125,7 +125,7 @@ Indicates flexibility of choice (option) with no implied preference.
 
 ---
 
-# Compliance
+# Conformance
 
 # Supporting Documents and Repositories
 

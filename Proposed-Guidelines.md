@@ -103,7 +103,7 @@ A base spec may contain:
 - Detailed architecture (multiple layers possible)
 - Assumptions and constraints
 - Non-Functional Requirements
-- Compliance 
+- conformanceance 
 This definition can be applied for both software and hardware, either stand-alone or in combination, and at many levels. 
 
 The base layer generally defines the technical details for one of the following:  
@@ -276,7 +276,7 @@ Electrical: Voltage levels, transformers, rectifiers
 Distribution: Busbars, cabling, breakers  
 Protection: Grounding, surge, fault isolation  
 Monitoring: Telemetry, management integration  
-Compliance: Standards alignment  
+conformance: Standards alignment  
 
 - Implementation (Actual code/configuration/design)  
 Manufacturers implement power systems conforming to OCP specifications.  
@@ -381,7 +381,7 @@ intent is to discuss that OCP specifications should not be overriding requiremen
 
 <!-- should add in guidelines re interfacing with other standard bodies. i.e., have member that is in project interfacing & gaining alignment with other std body (DMTF, PCI...) -->
 
-<!-- Modification of industry standard disallowed, must request change to the industry standard. Compliance.  Augmentation allowed. configuration/profiles, or otherwise selecting feature is acceptable as long as it remains compliant to the standard. -->
+<!-- Modification of industry standard disallowed, must request change to the industry standard. conformance.  Augmentation allowed. configuration/profiles, or otherwise selecting feature is acceptable as long as it remains compliant to the standard. -->
 
 <!-- question: Is there a better process to address OCP specification questions than an email to the project group.io? -->
 
@@ -389,7 +389,7 @@ intent is to discuss that OCP specifications should not be overriding requiremen
 ## Normative Language
 **All specifications shall utilize normative language.**   
 
-Normative language establishes clear, enforceable requirements and removes ambiguity. Normative language enables requirements which are the basis for compliance.
+Normative language establishes clear, enforceable requirements and removes ambiguity. Normative language enables requirements which are the basis for conformance.
 
 - Shall = requirement  
 Requirements are mandatory, must be done.  
@@ -497,25 +497,25 @@ This bill of materials represents one instantiation of the design. Manufacturer 
 
 ## Marketplace
 **Marketplace criteria are not appropriate for specifications.**
-Specifications shall convey requirements through normative language and summarize in the compliance section.  The marketplace criteria rely on the compliance section of the specification and are a distinct documents.
+Specifications shall convey requirements through normative language and summarize in the conformance section.  The marketplace criteria rely on the conformance section of the specification and are a distinct documents.
 
-## Compliance
+## Conformance
 
-Every specification shall include a Compliance section that summarizes all normative requirements defined in the body of the specification. The Compliance section exists so that implementers, reviewers, test labs, and OCP Marketplace reviewers can determine conformance without re-reading the full document. It is a summary and index of the requirements. It is not a second source of them.
+Every specification shall include a conformance section that summarizes all normative requirements defined in the body of the specification. The conformance section exists so that implementers, reviewers, test labs, and OCP Marketplace reviewers can determine conformance without re-reading the full document. It is a summary and index of the requirements. It is not a second source of them.
 
 ### Requirement Identifiers
 
 - Each normative requirement in the body text shall carry a unique identifier in the form `<PREFIX>-<n>`, where `<PREFIX>` is a short uppercase tag for the functional area (for example, `MECH`, `PWR`, `THRM`, `MGMT`, `SEC`) and `<n>` is an integer.
 
-- Identifiers shall be stable across revisions. A deleted requirement's identifier shall be retired and not reused. A materially changed requirement shall keep its identifier and be marked as changed in the Compliance table.
+- Identifiers shall be stable across revisions. A deleted requirement's identifier shall be retired and not reused. A materially changed requirement shall keep its identifier and be marked as changed in the conformance table.
 
 - Informative content (notes, examples, rationale, figures not marked normative) shall not carry requirement identifiers.
 
-### Compliance Table
+### Conformance Table
 
-The Compliance section shall contain a table listing every normative requirement in the specification, in identifier order, with the following columns:
+The conformance section shall contain a table listing every normative requirement in the specification, in identifier order, with the following columns:
 
-Table: Required Compliance Table Columns {#tbl:CMP_Columns}
+Table: Required Conformance Table Columns {#tbl:CMP_Columns}
 | **Column** | **Content** |
 | :--- | :--- |
 | ID           | The requirement identifier, matching the body text exactly. |
@@ -544,7 +544,7 @@ Table: Verification Methods {#tbl:CMP_Verification}
 
 The following example is informative. The values are illustrative.
 
-Table: Example Compliance Table {#tbl:TR_Matrix}
+Table: Example Conformance Table {#tbl:TR_Matrix}
 | **ID** | **Requirement** | **Clause** | **Obligation** | **Verification** | **Condition** | **Status** |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | SYS-12  | The vehicle shall accelerate from 0–60 mph in ≤ 8.0 seconds under standard test conditions.                 | 4.2  | SHALL  | Test | ALL |  |  
@@ -559,27 +559,27 @@ Table: Example Compliance Table {#tbl:TR_Matrix}
 
 ### Integrity Rules
 
-- The Compliance section shall not introduce new requirements or change existing ones. Only the specification body may add or change requirements.
+- The conformance section shall not introduce new requirements or change existing ones. Only the specification body may add or change requirements.
 
-- If the Compliance section and the body text conflict, the body text governs. The conflict shall be corrected in the next revision of the specification.
+- If the conformance section and the body text conflict, the body text governs. The conflict shall be corrected in the next revision of the specification.
 
-- Every requirement identifier in the body text shall appear in the Compliance table, and every identifier in the Compliance table shall appear in the body text.
+- Every requirement identifier in the body text shall appear in the conformance table, and every identifier in the conformance table shall appear in the body text.
 
-- The obligation level in the Compliance table shall match the keyword used in the body text. A requirement written with SHALL shall not be listed as Recommended or Optional.
+- The obligation level in the conformance table shall match the keyword used in the body text. A requirement written with SHALL shall not be listed as Recommended or Optional.
 
-### Compliance Claims
+### Conformance Claims
 
 - An implementation is compliant with a specification only if it meets every SHALL requirement whose Condition applies to that implementation.
 
-- A compliance claim shall identify the specification name and version.
+- A conformance claim shall identify the specification name and version.
 
-- A compliance claim shall identify optional features implemented.
+- A conformance claim shall identify optional features implemented.
 
-- Partial compliance (failing to meet one or more applicable SHALL requirements) shall not be described as compliance.
+- Partial conformance (failing to meet one or more applicable SHALL requirements) shall not be described as conformance.
 
 ### Relationship to Marketplace Criteria
 
-OCP Marketplace criteria are maintained as a separate document from the specification. They are derived from, and shall reference, the specification's Compliance section, including the specification name and version. Marketplace listing requirements shall not be embedded in the specification. Any change to a technical requirement shall be made through a revision of the specification, not through the Marketplace criteria.
+OCP Marketplace criteria are maintained as a separate document from the specification. They are derived from, and shall reference, the specification's conformance section, including the specification name and version. Marketplace listing requirements shall not be embedded in the specification. Any change to a technical requirement shall be made through a revision of the specification, not through the Marketplace criteria.
 
 
 ## GitHub  
@@ -614,7 +614,27 @@ Specifications have a defined process and associated templates. Any specificatio
 This **shall** be measured via the PDF rendering submitted for the contribution  
 <!-- update when we align to a specific rendering flow or allow md preview -->
 - Maintain version control per the specification process.  
-The version **shall** use a tag for the specific version. 
+
+**For GitHub based contributions:**
+The version **shall** use a Git tag for the specific version.  
+
+A Git tag is a named pointer to a specific commit, giving a human-readable name to the exact state of the code at that point. Because the contribution is defined by its tag and commit SHA rather than by the current state of a branch, the reviewed code remains identifiable while other work continues.
+
+To keep the final contribution free of unrelated changes, **the contributing branch (assumed to be main) shall accept only review fixes until the final contribution tag is created.** Unrelated work shall occur on separate branches and may be merged into main after the final tag is created.
+
+Basic flow:
+1. Pin the review.  
+Review at a tag and record its full commit SHA (e.g., v1.2.0-rc1 → a1b2c3d…). Key every finding to path:line at that SHA. Line numbers shift once fixes land; the SHA keeps each finding traceable.
+
+2. Make fixes on a branch.  
+The contributor creates a branch (e.g., review-fixes) from the reviewed tag. Each commit or pull request should reference the finding IDs it addresses. This allows the response to be audited without re-reviewing everything.
+
+3. Merge fixes and cut the final tag.  
+Review fixes shall be merged into main before the final tag is created. Tag the result (e.g., v1.2.0). Do not delete or move the reviewed tag; doing so would make the original findings point to code that no longer exists under that name.
+
+4. Record the approved contribution.
+The Steering Committee approval applies to the final tag and its full commit SHA, which together are preserved as the source of the contribution.
+
 
 ### Repository Documentation Requirements
 Every repository referenced within a contribution **SHALL** include a README.md (or similar file) containing at minimum:  
@@ -728,3 +748,9 @@ Compilation of the more significant additions/changes since last entry
 
 - re- prepped document for Community review cycle
 - added company-specific procedures section, very similar to vendor-neutral section
+
+**2026/11/03**
+- added in compliance section
+- vendor wording w.r.t. proprietary wording placement
+- added suggested BOM wording
+- moved "compliance" to "conformance" to distinguish and separate from any future marketplace need. we generally use compliance and conformance interchangeably but separating here for clarity. "A specification defines requirements, and a product **conforms** to the specification."  "An authority or program mandates **conformance** (or other rules), and a product or organization **complies** with that mandate."

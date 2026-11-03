@@ -160,14 +160,14 @@ Examples of sections within the main body:
 # Main Section B
 # Main Section C
 
-# Compliance
+# Conformance
 **This section is mandatory.**
-Define explicitly what it means to be compliant with the specification.  
-A base specification should describe what a design must accomplish to achieve compliance.  
-A design specification should describe how it satisfies the base specification (as applicable) and define what a product must implement to be compliant.  
-A Product specifications should describe how it satisfies the compliance requirements of the corresponding design specification.  
+Define explicitly what it means to conform to the specification.  
+A base specification should describe what a design must accomplish to achieve conformance.  
+A design specification should describe how it satisfies the base specification (as applicable) and define what a product must implement to conform.  
+A Product specifications should describe how it satisfies the conformance requirements of the corresponding design specification.  
  
-Ideally, compliance should be presented as a table that summarizes all requirements, clearly indicating whether each is mandatory or optional.
+Ideally, conformance should be presented as a table that summarizes all requirements, clearly indicating whether each is mandatory or optional.
 
 
 # Supporting Documents and Repositories
