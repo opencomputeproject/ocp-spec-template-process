@@ -83,7 +83,7 @@ List all contributors (CLA signatories), as well as companies or individuals who
 **This section is mandatory.**  
 Explicitly list all trademarks referenced in the specification. If none are applicable, use "None" or "N/A".  
 
-While the preferred approach is to reference third-party material (see specification guidelines), if any allowable copyrighted material is utilized, include the required copyright notice in this section. If none are applicable, use "None" or "N/A.".  
+While the preferred approach is to reference third-party material (see specification guidelines), if any allowable copyrighted material is utilized, include the required copyright notice in this section. If none are applicable, use "None" or "N/A."  
 
 A generic statement may also be used when additional coverage is needed or when ownership is uncertain:  "All trademarks, service marks, certification marks, and trade names are the property of their respective owners. Use of third-party marks is for identification only and does not imply endorsement."
 
@@ -142,7 +142,7 @@ Define the long-term vision and goals for the system or solution. Outline measur
 ## User Requirements/User Stories
 **This section is optional.**  
 Capture what end-users or stakeholders need from the system. This can be expressed as high-level requirements or user stories to ensure the architecture aligns with real-world needs.  
-If end-user stories or requirements we not utilized in the definition, then this section need not be present and the Goals, Visions, Objectives section will suffice.
+If end-user stories or requirements were not utilized in the definition, then this section need not be present and the Goals, Visions, Objectives section will suffice.
 
 ## Solution Architecture
 **This section is optional.**  
@@ -155,7 +155,7 @@ Examples of sections within the main body:
 
 - HW specification: may address domains such as performance, mechanical, electrical, thermal, manageability, security, reliability, and regulatory compliance.
 - SW specification: May cover domains such as data architecture, interfaces & protocols, performance & scalability, security, maintainability, test & validation.
-- Domain level base specification: Could incorporate any or all of the above examples customized to meet the requirements of the specific dmain.
+- Domain level base specification: Could incorporate any or all of the above examples customized to meet the requirements of the specific domain.
  
 # Main Section B
 # Main Section C
@@ -165,7 +165,7 @@ Examples of sections within the main body:
 Define explicitly what it means to conform to the specification.  
 A base specification should describe what a design must accomplish to achieve conformance.  
 A design specification should describe how it satisfies the base specification (as applicable) and define what a product must implement to conform.  
-A Product specifications should describe how it satisfies the conformance requirements of the corresponding design specification.  
+A Product specification should describe how it satisfies the conformance requirements of the corresponding design specification.  
  
 Ideally, conformance should be presented as a table that summarizes all requirements, clearly indicating whether each is mandatory or optional.
 

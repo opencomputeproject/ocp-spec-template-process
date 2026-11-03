@@ -44,18 +44,18 @@ header-includes: |
 
 The authors of this specification would like to acknowledge the following contributors:  
 
-**Instruction:** add in contributors. this could be a detailed list or a more high level statement if the list is extensive.*
+**Instruction:** add in contributors. this could be a detailed list or a more high level statement if the list is extensive.
 
 ---  
 
 # Copyright / Trademark  
 Names and brands mentioned may be claimed as trademarks by their respective owners.  
 
-**Instruction:** Use this section to acknowledge all trademarks applicable. list all applicable trademarks and copyrights explicitly* 
+**Instruction:** Use this section to acknowledge all trademarks applicable. list all applicable trademarks and copyrights explicitly 
 
 Materials utilized in this specification carry the following copyright:  
 
-**Instruction:** Use this section to document the copyrights of of any third-party material utilized.* 
+**Instruction:** Use this section to document the copyrights of any third-party material utilized. 
 
 ---
 
@@ -131,7 +131,7 @@ Indicates flexibility of choice (option) with no implied preference.
 
 # License
 ## Open Web Foundation (OWF) CLA
-**To Be Done** ideally we simply pull in another md file for license*
+**To Be Done** ideally we simply pull in another md file for license
 
 Contributions to this Specification are made under the terms and conditions set forth in **Modified Open Web Foundation Agreement 0.9 (OWFa 0.9)**. (As of October 16, 2024)  (“Contribution License”) by:
 
