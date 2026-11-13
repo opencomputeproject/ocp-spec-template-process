@@ -103,7 +103,8 @@ A base spec may contain:
 - Detailed architecture (multiple layers possible)
 - Assumptions and constraints
 - Non-Functional Requirements
-- conformanceance 
+- conformance 
+- Expectations of Design specifications
 This definition can be applied for both software and hardware, either stand-alone or in combination, and at many levels. 
 
 The base layer generally defines the technical details for one of the following:  
@@ -124,6 +125,7 @@ A design spec may contain:
 - assumptions and constraints
 - Non-Functional Design Considerations
 - Verification and validation
+- Expectations of Product specifications
 
 Design Specifications are intended to foster multiple product specifications.
 
@@ -340,15 +342,21 @@ Increment Rules:
 
 Currently, SW shall use the patch version. All other usages shall have errata = 0 until an errata process is established.
 
+We will use the following convention:  
+
+- Version identifies the technical release.
+- Revision identifies updates to the document describing that release, such as corrections, clarifications, or editorial changes.
+
+
 Guidelines for usage:  
 
-- small v used for version indicator
-- v0.3.0 = initial version with  sufficient content (e.g., TOC, vision, scope ...) to enable alignment  
-- v0.5.0 = majority of content defined; some areas need additional detail  
-- v0.8.0 = definition complete and implementable, though not fully reviewed  
-- v1.0.0 = reviewed and implementable across all capabilities  
-- v1.x.0 = use minor revisions for backward compatible changes. 
-- v2.x.0 = use Major revisions for changes that may affect backward compatibility.  
+- Upper case V used as version indicator
+- V0.3.0 = initial version with  sufficient content (e.g., TOC, vision, scope ...) to enable alignment  
+- V0.5.0 = majority of content defined; some areas need additional detail  
+- V0.8.0 = definition complete and implementable, though not fully reviewed  
+- V1.0.0 = reviewed and implementable across all capabilities  
+- V1.x.0 = use minor revisions for backward compatible changes. 
+- V2.x.0 = use Major revisions for changes that may affect backward compatibility.  
 
 Additional Notes:  
 
@@ -421,7 +429,13 @@ For multiple related OCP specifications being developed simultaneously, cross-re
  
 It is strongly preferred that specifications not reference documents stored on an OCP Google Drive, as those documents may be transient. Instead, the preferred approach is to release the document as an associated contribution and use the Google Drive–hosted version only for work-in-progress material. Another preferred option is to place the associated documentation in an OCP GitHub repository and reference that repository from the specification.  
 
-The recommended format for referencing a standard: Publisher, Standard designation:year, Full title, Publisher, URL.
+The recommended format for referencing a standard: Publisher, Standard designation:year, Full title, URL.
+
+A URL in a reference shall resolve to the cited document and edition, or to the publisher’s own page for that document where the full text is not freely available.
+
+URLs in references shall point to the publisher’s website or to a copy the publisher authorizes. Other third-party copies, previews, mirrors and summaries shall not be used, because their provenance cannot be verified, the publisher’s usage rights may not be honored, and an OCP specification should not appear to endorse a third-party site.
+
+A secondary source (for example an article, blog post, training, or summary) may be cited as informative background. The reference shall identify it as a secondary source, with its own author, title, date and URL, and shall not present it as the standard it discusses.
 
 ## Use of Non-OCP Materials
 **General Principle**  
@@ -754,3 +768,8 @@ Compilation of the more significant additions/changes since last entry
 - vendor wording w.r.t. proprietary wording placement
 - added suggested BOM wording
 - moved "compliance" to "conformance" to distinguish and separate from any future marketplace need. we generally use compliance and conformance interchangeably but separating here for clarity. "A specification defines requirements, and a product **conforms** to the specification."  "An authority or program mandates **conformance** (or other rules), and a product or organization **complies** with that mandate."
+
+**2026/11/xx**
+- added URL reference information
+- added guidance on next-level spec content
+- Aligned on upper case "V" for Version based on feedback. added Version & revision convention
