@@ -367,6 +367,7 @@ Additional Notes:
 - Regarding "complete and implementable", it is acceptable for a version to include elements intended for future definition, provided these elements do not hinder the implementation of the features and functionality defined within the current version  
 - Any numbering statement in the specification name is part of the name, not the version (e.g. Recliner V1 v1.0.0, Recliner V2 v1.2.0)
 - Authors are free to append "DRAFT", "Release Candidate", "RC #", or other indications of status in working versions.  The final version shall remove this language.
+- In exceptional cases where a contribution cannot meet the versioning requirements, the contributor shall document the remaining definition work and its timeline in the contribution and obtain a waiver from OCP Foundation staff.
 
 **To be done**: Establish Errata process/guidelines
 
@@ -772,4 +773,4 @@ Compilation of the more significant additions/changes since last entry
 **2026/11/xx**
 - added URL reference information
 - added guidance on next-level spec content
-- Aligned on upper case "V" for Version based on feedback. added Version & revision convention
+- Aligned on upper case "V" for Version based on feedback. added Version & revision convention as well as waiver.
